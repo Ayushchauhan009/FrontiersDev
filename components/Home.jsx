@@ -1,8 +1,9 @@
 "use client";
-// components/Header.js
-import { useEffect, useState } from "react";
 
-const Header = () => {
+import { useEffect, useState } from "react";
+import TopBar from "./CommonComps/TopBar";
+
+const Header = ({ trigger, nav, setNav }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -32,21 +33,24 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
-      <div className="visibleImage">
-        <p className="font-bold text-[60px] font-exo text-center flex justify-center items-center h-screen">
-          Elevate Your Web Presence <br /> with Innovation
-        </p>
-      </div>
-      <div
-        className="hiddenImage"
-        style={{
-          clipPath: calculateClipPath(),
-        }}
-      >
-        <p className="font-bold text-[60px] font-exo text-center flex justify-center items-center h-screen">
-          Boost Your Digital Impact <br /> with Innovation
-        </p>
+    <div>
+      <TopBar trigger={trigger} nav={nav} setNav={setNav} />
+      <div className="header text-white">
+        <div className="visibleImage">
+          <p className="font-bold text-[70px] font-exo text-center flex justify-center items-center h-screen">
+            Elevate Your Web Presence <br /> with Innovation
+          </p>
+        </div>
+        <div
+          className="hiddenImage"
+          style={{
+            clipPath: calculateClipPath(),
+          }}
+        >
+          <p className="font-bold text-[70px] font-exo text-center flex justify-center items-center h-screen">
+            Boost Your Digital Impact <br /> with Innovation
+          </p>
+        </div>
       </div>
     </div>
   );
