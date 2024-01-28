@@ -46,7 +46,7 @@ const Header = ({ trigger, nav, setNav }) => {
       <TopBar trigger={trigger} nav={nav} setNav={setNav} />
       <div className="header text-white">
         <div className="visibleImage">
-          <p className="font-bold text-[30px] lg:text-[70px] font-exo text-center flex justify-center items-center h-full lg:h-screen">
+          <p className="font-bold text-[30px] px-6 lg:px-0 lg:text-[70px] font-exo text-center flex justify-center items-center h-full lg:h-screen">
             Elevate Your Web Presence <br className="hidden lg:block" /> with
             Innovation
           </p>
@@ -57,7 +57,7 @@ const Header = ({ trigger, nav, setNav }) => {
             clipPath: calculateClipPath(),
           }}
         >
-          <p className="font-bold text-[30px] lg:text-[70px] font-exo text-center flex justify-center items-center h-full lg:h-screen">
+          <p className="font-bold text-[30px] px-6 lg:px-0 lg:text-[70px] font-exo text-center flex justify-center items-center h-full lg:h-screen">
             Boost Your Digital Impact <br className="hidden lg:block" /> with
             Innovation
           </p>
