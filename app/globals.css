@@ -33,6 +33,9 @@ body {
 
 }
 
+.headings{
+  font-family: "Exo 2", sans-serif;
+}
 
 .hiddenImage {
   position: absolute;
@@ -113,6 +116,10 @@ body {
   transform: translate(-10px, -30px);
   z-index: 1;
 }
+}
+
+.transition-slow {
+  transition: height 1s ease-out; /* Adjust the duration and timing function as needed */
 }
 
 

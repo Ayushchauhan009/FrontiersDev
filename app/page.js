@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Home from "@/components/Home";
 import Loader from "@/components/Loader";
 import Intro from "@/components/Intro";
+import Services from "@/components/Services";
 // import Navbar from "@/components/CommonComps/Navbar";
 
 const Loading = () => {
@@ -38,6 +39,7 @@ const Loading = () => {
         >
           {/* <Navbar /> */}
           <Home trigger={trigger} nav={nav} setNav={setNav} />
+          <Services />
           <Intro />
         </div>
       )}
