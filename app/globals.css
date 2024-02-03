@@ -4,14 +4,40 @@
 @tailwind utilities;
 
 
+
+@font-face {
+  font-family: 'Clash';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf') format('opentype'), /* Specify the correct path and format */
+     
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: #1a1a1a;
 }
 
+
+
+
+
 .max-container{
   @apply max-w-[1440px] mx-auto;
 }
+
+
+.bgOpacity{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+  
+}
+
+
+
+
+.bgOpacity2{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 
 
 
@@ -29,12 +55,12 @@ body {
   height: 100%;
   background-image: url('/3.jpg');
   background-size: cover;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Clash";
 
 }
 
 .headings{
-  font-family: "Exo 2", sans-serif;
+  font-family: "Clash", sans-serif;
 }
 
 .hiddenImage {
@@ -46,7 +72,7 @@ body {
   background-image: url('/1.jpg');
   background-size: cover;
   pointer-events: none;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Clash";
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal; 
