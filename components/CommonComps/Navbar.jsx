@@ -46,7 +46,7 @@ export default function Navbar({ nav, setNav }) {
             <a
               id="home"
               href="/"
-              className="hover-target font-exo text-3xl 400:text-5xl md:text-6xl xl:text-7xl"
+              className="hover-target font-extrabold text-3xl 400:text-5xl md:text-6xl xl:text-7xl"
             >
               HOME
             </a>

@@ -6,7 +6,7 @@ const Services = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
 
-  const images = ["/1stService.png", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
+  const images = ["/service1.svg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +40,7 @@ const Services = () => {
       >
         <div className="flex flex-col lg:flex-row items-start lg:space-x-20 justify-between lg:pt-20 ">
           <div className="font-bold w-full lg:w-[100%] sticky top-10 lg:top-20 font-exo">
-            <p className="mt-10 mb-20 font-semibold  text-3xl lg:text-[55px] headings ">
+            <p className="mt-10 mb-32 font-semibold  text-3xl lg:text-[55px] headings ">
               Services
             </p>
             <div className="relative" style={{ height: "300px" }}>
@@ -49,7 +49,7 @@ const Services = () => {
                   key={index}
                   src={image}
                   alt=""
-                  className="absolute z-50  scale-[1.5]  rounded-[20px]"
+                  className="absolute z-50  scale-[1.4]  rounded-[20px]"
                   style={{
                     display: index === visibleIndex ? "block" : "none",
                     height: "100%",
@@ -91,9 +91,13 @@ const Services = () => {
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="service-list-item z-0 font-semibold text-[20px] mb-8 relative"
+                  className={`service-list-item z-0 font-semibold text-[20px] mb-8 relative ${
+                    index === visibleIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                  style={{
+                    transition: "opacity 0.5s ease-in-out",
+                  }}
                 >
-                  {/* <span className="bullet-point absolute">&#8226;</span> */}
                   <div>
                     <span className="block headings text-[40px]">
                       {item.title}

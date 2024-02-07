@@ -35,7 +35,8 @@ body {
 
 
 .bgOpacity2{
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: linear-gradient(180deg, #0d001a, #0f002b, #000000);
+
 }
 
 
