@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -714,4 +715,191 @@ scrollbar-width: none;
 .App.nav-active .nav__list-item:nth-child(10) {
 	-webkit-transition-delay: 1.7s;
           transition-delay: 1.7s;
+}
+
+.intro-img {
+  filter: sepia(1)
+}
+
+
+
+.intro-container {
+  transition: all 1s ease;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px wheat;
+}
+
+.intro-card {
+  transform: translateY(-200%);
+  width: 100%;
+  transition: all 1s ease;
+  border-radius: 150px;
+
+}
+
+.intro-container:hover .intro-card {
+  transform: translateY(0);
+  width: 100%;
+  border-radius: 30px;
+}
+
+.joinButton{
+  transition: all 1s ease;
+  transform: rotate(0deg);
+  box-shadow: 0px 0px 10px white;
+}
+
+.joinButton:hover{
+  transform: rotate(10deg);
+  box-shadow: 0px 0px 5px rgb(65, 23, 23);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: 1em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+/* App.css */
+.scroll {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  /* Add any other styling you need */
+  position: relative;
+}
+
+.item {
+  /* Add styling for individual boxes */
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  margin-right: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.item.title {
+  font-weight: bold;
 }
