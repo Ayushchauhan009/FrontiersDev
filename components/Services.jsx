@@ -35,12 +35,12 @@ const Services = () => {
     <div className="relative bgOpacity2 pb-20 text-white">
       <div
         className={` px-5 lg:px-24 max-container ${
-          isSticky ? "sticky inset-0 top-20" : ""
+          isSticky ? "lg:sticky inset-0 top-20" : ""
         }`}
       >
         <div className="flex flex-col lg:flex-row items-start lg:space-x-20 justify-between lg:pt-20 ">
           <div className="font-bold w-full lg:w-[100%] sticky top-10 lg:top-20 font-exo">
-            <p className="mt-10 mb-32 font-semibold  text-3xl lg:text-[55px] headings ">
+            <p className="mt-10 mb-16 lg:mb-32 font-semibold  text-3xl lg:text-[55px] headings ">
               Services
             </p>
             <div className="relative" style={{ height: "300px" }}>
@@ -49,19 +49,16 @@ const Services = () => {
                   key={index}
                   src={image}
                   alt=""
-                  className="absolute z-50  scale-[1.4]  rounded-[20px]"
+                  className="absolute w-[100%] h-[100%] object-contain z-50 opacity-50 md:opacity-100  lg:scale-[1.4]  rounded-[20px]"
                   style={{
                     display: index === visibleIndex ? "block" : "none",
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "contain",
                   }}
                 />
               ))}
             </div>
           </div>
           <div>
-            <ol className="w-full mt-10 z-0 lg:mt-32 space-y-40 list-none">
+            <ol className="w-full mt-10 z-0 lg:mt-32 space-y-20 lg:space-y-40 list-none">
               {[
                 {
                   title: "Website Development",
@@ -92,17 +89,19 @@ const Services = () => {
                 <li
                   key={index}
                   className={`service-list-item z-0 font-semibold text-[20px] mb-8 relative ${
-                    index === visibleIndex ? "opacity-100" : "opacity-0"
+                    index === visibleIndex
+                      ? "opacity-100"
+                      : "opacity-25 lg:opacity-25"
                   }`}
                   style={{
                     transition: "opacity 0.5s ease-in-out",
                   }}
                 >
                   <div>
-                    <span className="block headings text-[40px]">
+                    <span className="block headings text-[32px] lg:text-[40px]">
                       {item.title}
                     </span>
-                    <ul className="list-none font-space font-normal text-[20px] mt-5">
+                    <ul className="list-none font-space font-normal text-lg lg:text-[20px] mt-2 lg:mt-5">
                       <li>{item.description}</li>
                     </ul>
                   </div>

@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const Intro = () => {
   return (
-    <div className=" bgOpacity2  text-white  py-32 ">
-      <div className="max-container px-24">
-        <div className=" mt-10 mb-10 font-semibold  text-3xl lg:text-[55px] headings">
+    <div className=" bgOpacity2  text-white py-16 lg:py-32 ">
+      <div className="max-container px-5 lg:px-24">
+        <div className=" lg:mt-10 mb-5 lg:mb-10 font-semibold  text-3xl lg:text-[55px] headings">
           Who we are?
         </div>
         <div className="font-space">
-          <div className="onScrollTypeWritterEffect w-[70%] text-2xl">
+          <div className="onScrollTypeWritterEffect lg:w-[70%] text-xl lg:text-2xl">
             Welcome to our Digital Realm! As full-stack developers turned
             entrepreneurs, we craft bespoke and cutting-edge web solutions.{" "}
             <br /> <br /> With a passion for innovation and a commitment to
@@ -19,7 +19,7 @@ const Intro = () => {
             your business towards success. Let's build together!
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-10 mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20">
           <div className="intro-container relative bg-[#7C22DE] w-full h-[450px] border border-black rounded-[30px]">
             <Image
               src="/ayush.jpg"
@@ -200,8 +200,8 @@ const Intro = () => {
               </div>
             </div>
           </div>
-          <div className=" bg-transparent w-full h-[450px]  flex justify-center items-center">
-            <div className="   cursor-pointer  text-white font-bold hover:bg-transparent hover:scale-110 transition-all hover:border-[#7C22DE] border border-transparent w-[170px] h-[170px] rounded-[50%] flex justify-center items-center headings bg-[#7C22DE] text-3xl ">
+          <div className=" bg-transparent w-full lg:h-[450px]  flex justify-center items-center">
+            <div className="   cursor-pointer shadow-2xl text-white font-semibold hover:bg-transparent hover:scale-110 transition-all hover:border-[#7C22DE] border border-transparent py-3 px-6 rounded-[15px] flex justify-center items-center headings bg-[#7C22DE] text-xl lg:text-3xl ">
               Join Us
             </div>
           </div>
