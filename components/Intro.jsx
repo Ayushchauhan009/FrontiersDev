@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { ayush, rahul } from "@/public/index";
+// import { ayush, rahul } from "@/public/index";
 import Image from "next/image";
 
 const Intro = () => {
   return (
-    <div className=" bgOpacity2  text-white py-16 lg:py-32 ">
+    <div className=" bgOpacity2 text-white py-16 lg:py-32 ">
       <div className="max-container px-5 lg:px-24">
         <div className=" lg:mt-10 mb-5 lg:mb-10 font-semibold  text-3xl lg:text-[55px] headings">
           Who we are?
@@ -28,7 +28,7 @@ const Intro = () => {
               alt="Picture of the author"
               className="rounded-[30px] h-[350px] object-cover intro-img"
             />
-            <div className="px-3 flex items-center justify-between mt-7">
+            <div className="px-8 mt-4 space-y-1">
               <p className="text-white headings  whitespace-nowrap tracking-wider text-2xl font-bold">
                 Ayush Chauhan
               </p>
@@ -118,7 +118,7 @@ const Intro = () => {
               alt="Picture of the author"
               className="rounded-[30px] h-[350px] object-cover intro-img"
             />
-            <div className="px-3 flex items-center justify-between mt-7">
+            <div className="px-8 mt-4 space-y-1">
               <p className="text-white headings  whitespace-nowrap tracking-wider text-2xl font-bold">
                 Rahul Singh
               </p>
