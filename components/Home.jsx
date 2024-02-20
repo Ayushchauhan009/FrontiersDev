@@ -64,14 +64,14 @@ const Header = ({ trigger, nav, setNav }) => {
             clipPath: calculateClipPath(),
           }}
         >
-          <p className="font-bold text-[30px] flex-col px-6 lg:px-0 lg:text-[70px]  text-center flex justify-center items-center h-full lg:h-screen">
+          <p className="font-bold text-[30px] flex-col px-6 lg:px-0 lg:text-[70px] text-center flex justify-center items-center h-full lg:h-screen">
             Boost Your Digital Impact <br className="hidden lg:block" /> with
             Innovation{" "}
             <span className="mt-20 shadow-2xl animate-bounce">
               <img
                 src="/downHeader.png"
                 alt=""
-                className="w-12 rounded-full  z-50"
+                className="w-12 rounded-full z-50"
               />
             </span>
           </p>

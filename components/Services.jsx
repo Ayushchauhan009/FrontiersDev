@@ -102,7 +102,7 @@ const Services = () => {
                     <span className="block headings text-[40px]">
                       {item.title}
                     </span>
-                    <ul className="list-none font-normal text-[20px] mt-5">
+                    <ul className="list-none font-space font-normal text-[20px] mt-5">
                       <li>{item.description}</li>
                     </ul>
                   </div>
