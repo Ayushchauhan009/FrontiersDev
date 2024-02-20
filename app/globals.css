@@ -748,7 +748,7 @@ scrollbar-width: none;
 
 .intro-card {
   transform: translateY(-200%);
-  width: 100%;
+  /* width: fit-content; */
   transition: all 1s ease;
   border-radius: 150px;
 
@@ -756,7 +756,7 @@ scrollbar-width: none;
 
 .intro-container:hover .intro-card {
   transform: translateY(0);
-  width: 100%;
+  
   border-radius: 30px;
 }
 
