@@ -46,7 +46,7 @@ const Services = () => {
       >
         <div className="flex flex-col lg:flex-row items-start lg:space-x-20 justify-between lg:pt-20 ">
           <div className="font-bold w-full lg:w-[100%] sticky top-10 lg:top-20 font-exo">
-            <p className="mt-10 mb-16 lg:mb-32 font-semibold  text-3xl lg:text-[55px] headings ">
+            <p className="mt-10 mb-16 lg:mb-32 font-semibold  text-3xl lg:text-[55px] font-clash ">
               Services
             </p>
             <div className="relative" style={{ height: "300px" }}>
@@ -104,7 +104,7 @@ const Services = () => {
                   }}
                 >
                   <div>
-                    <span className="block headings text-[32px] lg:text-[40px]">
+                    <span className="block font-clash text-[32px] lg:text-[40px]">
                       {item.title}
                     </span>
                     <ul className="list-none font-space font-normal text-lg lg:text-[20px] mt-2 lg:mt-5">

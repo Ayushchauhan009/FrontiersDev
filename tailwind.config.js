@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: {
         exo: ["Exo 2", "sans-serif"],
         space: ["Space Grotesk", "sans-serif"],
+        clash: ["Clash"],
       },
     },
   },
