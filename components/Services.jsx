@@ -87,7 +87,7 @@ const Services = () => {
                     "Transforming ideas into visually stunning graphics. ",
                 },
                 {
-                  title: "Video Editing",
+                  title: "Video Creation & Editing",
                   description:
                     "Editing and enhancing video content to tell your story effectively.",
                 },
