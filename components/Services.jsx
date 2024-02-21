@@ -6,7 +6,13 @@ const Services = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
 
-  const images = ["/service1.svg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
+  const images = [
+    "/serv1.png",
+    "/serv2.png",
+    "/serv3.png",
+    "/serv4.png",
+    "/serv5.png",
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
