@@ -6,13 +6,7 @@ const Services = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
 
-  const images = [
-    "/serv1.png",
-    "/serv2.png",
-    "/serv3.png",
-    "/serv4.png",
-    "/serv5.png",
-  ];
+  const images = ["/7.png", "/5.png", "/10.png", "/9.png", "/11.png"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,9 +49,9 @@ const Services = () => {
                   key={index}
                   src={image}
                   alt=""
-                  className="absolute w-[100%] h-[100%] object-contain z-50 opacity-50 md:opacity-100  lg:scale-[1.4]  rounded-[20px]"
+                  className="absolute w-[100%] h-[100%] transition-all duration-1000 object-contain z-50 opacity-50 md:opacity-100  lg:scale-[1.5]  rounded-[20px]"
                   style={{
-                    display: index === visibleIndex ? "block" : "none",
+                    display: index === visibleIndex ? "block " : "none",
                   }}
                 />
               ))}

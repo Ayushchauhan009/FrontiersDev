@@ -45,8 +45,8 @@ const Header = ({ trigger, nav, setNav }) => {
     <div>
       <TopBar trigger={trigger} nav={nav} setNav={setNav} />
       <div className="header text-white">
-        <div className="visibleImage">
-          <p className="font-bold flex flex-col text-[30px] px-6 lg:px-0 lg:text-[70px] font-clash text-center  justify-center items-center h-full lg:h-screen">
+        <div className="visibleImage bg-opacity-50">
+          <p className="font-bold flex flex-col text-[30px] pt-32 px-6 lg:px-0 lg:text-[70px] font-clash text-center  justify-center items-center h-full lg:h-screen">
             Elevate Your Web Presence <br className="hidden lg:block" /> with
             Innovation{" "}
             <span className="mt-20 shadow-2xl animate-bounce">
@@ -64,7 +64,7 @@ const Header = ({ trigger, nav, setNav }) => {
             clipPath: calculateClipPath(),
           }}
         >
-          <p className="font-bold text-[30px] flex-col px-6 lg:px-0 font-clash lg:text-[70px] text-center flex justify-center items-center h-full lg:h-screen">
+          <p className="font-bold text-[30px] pt-32 flex-col px-6 lg:px-0 font-clash lg:text-[70px] text-center flex justify-center items-center h-full lg:h-screen">
             Boost Your Digital Impact <br className="hidden lg:block" /> with
             Innovation{" "}
             <span className="mt-20 shadow-2xl animate-bounce">
