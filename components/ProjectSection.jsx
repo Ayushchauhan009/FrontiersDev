@@ -40,7 +40,7 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
             alt={name}
             className="w-full mb-4 h-[200px] rounded-2xl object-cover"
           />
-          <h3 className="text-white font-space font-semibold text-[24px]">
+          <h3 className="text-white font-space font-semibold text-xl  lg:text-[24px]">
             {name}
           </h3>
         </div>
