@@ -15,7 +15,7 @@ export default function Topbar({ trigger, nav, setNav }) {
               nav ? "hidden" : "block"
             }`}
           >
-            <button className="mr-8 bg-[#7C22DE] font-clash hover:bg-transparent px-5 py-3 shadow-2xl scale-90 hover:scale-100 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px]">
+            <button className="mr-8 bg-[#7c22de] font-clash hover:bg-transparent px-5 py-3 shadow-2xl scale-90 hover:scale-100 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px]">
               Say Hello
             </button>
           </div>

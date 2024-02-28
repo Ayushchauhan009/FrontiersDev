@@ -10,6 +10,7 @@ import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import HeightExtra from "@/components/HeightExtra";
+import { ProjectSection } from "@/components/ProjectSection";
 // import Navbar from "@/components/CommonComps/Navbar";
 
 const Loading = () => {
@@ -31,22 +32,23 @@ const Loading = () => {
 
   return (
     <div>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div
-          className={`relative z-0 App ${
-            nav && "nav-active"
-          } h-screen min-h-screen`}
-        >
-          {/* <Navbar /> */}
-          <Home trigger={trigger} nav={nav} setNav={setNav} />
-          <Services />
-          <Intro />
-          <Projects/>
-          <HeightExtra/>
-        </div>
-      )}
+      {/* {loading ? (
+        <Loader /> */}
+      {/* ) : ( */}
+      <div
+        className={`relative z-0 App ${
+          nav && "nav-active"
+        } h-screen min-h-screen`}
+      >
+        {/* <Navbar /> */}
+        <Home trigger={trigger} nav={nav} setNav={setNav} />
+        <Services />
+        <Intro />
+        {/* <Projects /> */}
+        <ProjectSection />
+        <HeightExtra />
+      </div>
+      {/* )} */}
     </div>
   );
 };
