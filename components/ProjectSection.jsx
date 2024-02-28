@@ -5,6 +5,7 @@ import { Tilt } from "react-tilt";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, staggerContainer } from "@/utils/motion";
+import Link from "next/link";
 
 const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
   return (
@@ -18,17 +19,19 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
         className="bg-[#2A153F] cardHovered shadow-2xl hover:bg-transparent border border-transparent hover:border-[#7C22DE] transition-all p-5 rounded-2xl lg:w-auto sm:w-[360px] w-full "
       >
         <div className="mt-5 ">
-          <div className="absolute card-img--hover inset-0 flex  justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-16 hover:bg-transparent border border-transparent hover:border-[#7c22de] transition-all bg-white shadow-xl h-16 p-2 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src="/next.png"
-                alt="demo"
-                className="w-auto h-auto object-contain"
-              />
-            </div>
+          <div className="absolute card-img--hover inset-0 flex  justify-end h-fit m-3 card-img_hover">
+            <Link href={source_code_link} target="_blank">
+              <div
+                // onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-16 hover:bg-transparent border border-transparent rounded-full hover:border-[#7c22de] transition-all bg-white shadow-xl p-2 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src="/next.png"
+                  alt="demo"
+                  className="w-auto h-auto object-cover"
+                />
+              </div>
+            </Link>
           </div>
           <Image
             src={image}
