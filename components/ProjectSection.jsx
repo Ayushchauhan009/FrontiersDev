@@ -16,7 +16,7 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-[#2A153F] cardHovered shadow-2xl hover:bg-transparent border border-transparent hover:border-[#7C22DE] transition-all p-5 rounded-2xl lg:w-auto sm:w-[360px] w-full "
+        className="bg-[#2A153F] cardHovered shadow-2xl hover:bg-transparent border border-transparent hover:border-[#7C22DE] transition-all p-5 rounded-2xl lg:w-auto sm:w-[360px] w-auto "
       >
         <div className="mt-5 ">
           <div className="absolute card-img--hover inset-0 flex  justify-end h-fit m-3 card-img_hover">
