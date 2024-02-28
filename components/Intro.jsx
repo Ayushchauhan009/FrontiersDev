@@ -20,7 +20,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20">
-          <div className="intro-container relative bg-[#0a0a0a] w-full h-[450px]  rounded-[30px]">
+          <div className="intro-container relative bg-[#2A153F] w-[100%] h-[450px]  rounded-[30px]">
             <Image
               src="/ayush.jpg"
               width={400}
@@ -36,7 +36,7 @@ const Intro = () => {
                 Developer
               </p>
             </div>
-            <div className="intro-card absolute top-0 bg-[#000] bg-opacity-50 w-full h-[450px]   font-exo font-semibold p-10 flex justify-center items-center">
+            <div className="intro-card absolute top-0 bg-[#000] bg-opacity-50 w-[100%] h-[450px]   font-exo font-semibold p-10 flex justify-center items-center">
               <div className="main">
                 <div className="up">
                   <button className="card1">
@@ -110,7 +110,7 @@ const Intro = () => {
               </div>
             </div>
           </div>
-          <div className="intro-container relative bg-[#0a0a0a] w-full h-[450px] rounded-[30px]">
+          <div className="intro-container relative bg-[#2A153F] w-[100%] h-[450px] rounded-[30px]">
             <Image
               src="/rahul.jpg"
               width={400}
@@ -126,7 +126,7 @@ const Intro = () => {
                 Developer
               </p>
             </div>
-            <div className="intro-card absolute top-0 bg-[#000] bg-opacity-50 w-full h-[450px]  font-exo font-semibold p-10 flex justify-center items-center">
+            <div className="intro-card absolute top-0 bg-[#000] bg-opacity-50 w-[100%] h-[450px]  font-exo font-semibold p-10 flex justify-center items-center">
               <div className="main">
                 <div className="up">
                   <button className="card1">
@@ -201,7 +201,7 @@ const Intro = () => {
             </div>
           </div>
           <div className=" bg-transparent w-full lg:h-[450px]  flex justify-center items-center">
-            <div className="   cursor-pointer shadow-2xl text-white font-semibold hover:bg-transparent hover:scale-110 transition-all hover:border-[#7C22DE] border border-transparent py-3 px-6 rounded-[15px] flex justify-center items-center font-clash bg-[#0a0a0a] text-xl lg:text-3xl ">
+            <div className="   cursor-pointer shadow-2xl text-white font-medium hover:bg-transparent hover:scale-110 transition-all hover:border-[#7C22DE] border border-transparent py-3 px-6 rounded-[15px] flex justify-center items-center font-clash bg-[#7c22de] text-xl lg:text-3xl ">
               Join Us
             </div>
           </div>
