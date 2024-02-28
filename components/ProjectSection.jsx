@@ -23,7 +23,7 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
             <Link href={source_code_link} target="_blank">
               <div
                 // onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-16 hover:bg-transparent border border-transparent rounded-full hover:border-[#7c22de] transition-all bg-white shadow-xl p-2 rounded-full flex justify-center items-center cursor-pointer"
+                className="black-gradient w-16 hover:bg-transparent border border-transparent rounded-full hover:border-[#7c22de] transition-all bg-white shadow-xl p-2  flex justify-center items-center cursor-pointer"
               >
                 <img
                   src="/next.png"

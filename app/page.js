@@ -32,23 +32,23 @@ const Loading = () => {
 
   return (
     <div>
-      {/* {loading ? (
-        <Loader /> */}
-      {/* ) : ( */}
-      <div
-        className={`relative z-0 App ${
-          nav && "nav-active"
-        } h-screen min-h-screen`}
-      >
-        {/* <Navbar /> */}
-        <Home trigger={trigger} nav={nav} setNav={setNav} />
-        <Services />
-        <Intro />
-        {/* <Projects /> */}
-        <ProjectSection />
-        <HeightExtra />
-      </div>
-      {/* )} */}
+      {loading ? (
+        <Loader />
+      ) : (
+        <div
+          className={`relative z-0 App ${
+            nav && "nav-active"
+          } h-screen min-h-screen`}
+        >
+          {/* <Navbar /> */}
+          <Home trigger={trigger} nav={nav} setNav={setNav} />
+          <Services />
+          <Intro />
+          {/* <Projects /> */}
+          <ProjectSection />
+          <HeightExtra />
+        </div>
+      )}
     </div>
   );
 };
