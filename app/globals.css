@@ -36,16 +36,15 @@ body {
   @apply max-w-[1440px] mx-auto;
 }
 
-
-.bgOpacity{
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
-  
+.bgOpacity {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(100, 43, 115, 1) 0%,
+    rgba(4, 0, 4, 1) 90%
+  );
 }
 
-
-
-
-.bgOpacity2{
+.bgOpacity2 {
   background: linear-gradient(180deg, #0d001a, #0f002b, #0d001a);
 }
 
@@ -97,22 +96,17 @@ body {
 }
 
 @media (max-width: 768px) {
-  
-.header {
- 
-  height: 70vh;
+  .header {
+    height: 70vh;
+  }
 
-}
-
-.visibleImage {
-  width: 100%;
-  height: 100%;
-  background-image: url('/Bg2.png');
-  background-size: cover;
-  font-family: "Exo 2", sans-serif;
-
-}
-
+  .visibleImage {
+    width: 100%;
+    height: 100%;
+    background-image: url("/Bg2.png");
+    background-size: cover;
+    font-family: "Exo 2", sans-serif;
+  }
 
   .hiddenImage {
     position: absolute;
@@ -173,7 +167,6 @@ scrollbar-width: none;
   border: none;
   -webkit-user-select: none;
 }
-
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
@@ -239,7 +232,6 @@ scrollbar-width: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .wrapper .box-wrap {
   width: 70%;
@@ -799,7 +791,6 @@ scrollbar-width: none;
   /* width: fit-content; */
   transition: all 1s ease;
   border-radius: 150px;
-
 }
 
 .intro-container:hover .intro-card {
@@ -1021,9 +1012,21 @@ scrollbar-width: none;
   font-weight: bold;
 }
 
+.cardHovered .card-img--hover {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.cardHovered:hover .card-img--hover {
+  display: flex;
+  top: 20;
+  right: 20;
+  position: absolute;
+  inset: 0;
+}
 
 /* Pricing Component Style */
-.transAll{
+.transAll {
   transition: all 1s linear;
 }
 .clickable-bg {
@@ -1032,26 +1035,26 @@ scrollbar-width: none;
   justify-content: center;
   background-color: #7c22de;
   width: 100%;
-  transition: all .3s linear;
-  animation: transWidth .6s linear;
+  transition: all 0.3s linear;
+  animation: transWidth 0.6s linear;
   color: white;
   border-radius: 30px;
 }
 
 @keyframes transWidth {
   from {
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     width: 0%;
   }
 
-  to{
-    transition: all .3s linear;
+  to {
+    transition: all 0.3s linear;
     width: 100%;
   }
 }
 
-.listStyle{
-  list-style: url('/check.png');
+.listStyle {
+  list-style: url("/check.png");
   margin-left: 40px;
 }
 
@@ -1081,10 +1084,10 @@ scrollbar-width: none;
 .pyramid-loader .pyramid-wrapper .side {
   width: 300px;
   height: 300px;
-/* you can choose any gradient or color you want */
+  /* you can choose any gradient or color you want */
   /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
   position: absolute;
-  opacity: .1;
+  opacity: 0.1;
   top: 80px;
   left: 0;
   right: 0;
@@ -1096,31 +1099,31 @@ scrollbar-width: none;
 
 .pyramid-loader .pyramid-wrapper .side1 {
   transform: rotateZ(-30deg) rotateY(90deg);
-  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+  background: conic-gradient(#2bdeac, #f028fd, #d8cce6, #2f2585);
 }
 
 .pyramid-loader .pyramid-wrapper .side2 {
   transform: rotateZ(30deg) rotateY(90deg);
-  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+  background: conic-gradient(#2f2585, #d8cce6, #f028fd, #2bdeac);
 }
 
 .pyramid-loader .pyramid-wrapper .side3 {
   transform: rotateX(30deg);
-  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+  background: conic-gradient(#2f2585, #d8cce6, #f028fd, #2bdeac);
 }
 
 .pyramid-loader .pyramid-wrapper .side4 {
   transform: rotateX(-30deg);
-  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+  background: conic-gradient(#2bdeac, #f028fd, #d8cce6, #2f2585);
 }
 
 .pyramid-loader .pyramid-wrapper .shadow {
   width: 250px;
   height: 250px;
-  background: #8B5AD5;
+  background: #8b5ad5;
   position: absolute;
   top: 170px;
-  opacity: .4;
+  opacity: 0.4;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1129,32 +1132,29 @@ scrollbar-width: none;
   filter: blur(12px);
 }
 
-.priceDiv{
+.priceDiv {
   transform: translateX(0);
-  animation: trasn .2s linear;
+  animation: trasn 0.2s linear;
   transition: all 1s linear;
-  
 }
 
 @keyframes trasn {
-  from{
-
+  from {
     transform: translateY(10%);
-    opacity: .2;
+    opacity: 0.2;
   }
-  to{
+  to {
     transform: translateY(0%);
     opacity: 1;
   }
 }
 
 @media (max-width: 1096px) {
-  .pyramid-loader{
+  .pyramid-loader {
     display: none;
   }
   .clickable-bg {
-    
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     border-radius: 10px;
   }
 }

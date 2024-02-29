@@ -10,6 +10,9 @@ import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import HeightExtra from "@/components/HeightExtra";
+import Pricing from "@/components/Pricing";
+import { ProjectSection } from "@/components/ProjectSection";
+
 // import Navbar from "@/components/CommonComps/Navbar";
 
 const Loading = () => {
@@ -43,8 +46,8 @@ const Loading = () => {
           <Home trigger={trigger} nav={nav} setNav={setNav} />
           <Services />
           <Intro />
-          <Projects/>
-          <HeightExtra/>
+          <ProjectSection/>
+          <Pricing/>
         </div>
       )}
     </div>
