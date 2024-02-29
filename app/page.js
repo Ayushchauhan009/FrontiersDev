@@ -10,7 +10,6 @@ import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import HeightExtra from "@/components/HeightExtra";
-import Pricing from "@/components/Pricing";
 // import Navbar from "@/components/CommonComps/Navbar";
 
 const Loading = () => {
@@ -45,7 +44,7 @@ const Loading = () => {
           <Services />
           <Intro />
           <Projects/>
-          <Pricing/>
+          <HeightExtra/>
         </div>
       )}
     </div>

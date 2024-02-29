@@ -36,15 +36,16 @@ body {
   @apply max-w-[1440px] mx-auto;
 }
 
-.bgOpacity {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(100, 43, 115, 1) 0%,
-    rgba(4, 0, 4, 1) 90%
-  );
+
+.bgOpacity{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+  
 }
 
-.bgOpacity2 {
+
+
+
+.bgOpacity2{
   background: linear-gradient(180deg, #0d001a, #0f002b, #0d001a);
 }
 
@@ -96,17 +97,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header {
-    height: 70vh;
-  }
+  
+.header {
+ 
+  height: 70vh;
 
-  .visibleImage {
-    width: 100%;
-    height: 100%;
-    background-image: url("/Bg2.png");
-    background-size: cover;
-    font-family: "Exo 2", sans-serif;
-  }
+}
+
+.visibleImage {
+  width: 100%;
+  height: 100%;
+  background-image: url('/Bg2.png');
+  background-size: cover;
+  font-family: "Exo 2", sans-serif;
+
+}
+
 
   .hiddenImage {
     position: absolute;
@@ -167,6 +173,74 @@ scrollbar-width: none;
   border: none;
   -webkit-user-select: none;
 }
+
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .wrapper .box-wrap {
   width: 70%;
   height: 70%;
@@ -717,7 +791,7 @@ scrollbar-width: none;
   transition: all 1s ease;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0px 0px 5px black;
+  /* box-shadow: 0px 0px 5px black; */
 }
 
 .intro-card {
@@ -725,6 +799,7 @@ scrollbar-width: none;
   /* width: fit-content; */
   transition: all 1s ease;
   border-radius: 150px;
+
 }
 
 .intro-container:hover .intro-card {
