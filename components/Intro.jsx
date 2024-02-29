@@ -126,7 +126,7 @@ const Intro = () => {
                 Developer
               </p>
             </div>
-            <div className="intro-card absolute top-0 bg-[#000] bg-opacity-50 w-[100%] h-[450px] font-exo font-semibold p-10 flex justify-center items-center">
+            <div className="intro-card absolute top-0 bg-[#000] bg-opacity-50 w-[100%] h-[450px]  font-exo font-semibold p-10 flex justify-center items-center">
               <div className="main">
                 <div className="up">
                   <button className="card1">
