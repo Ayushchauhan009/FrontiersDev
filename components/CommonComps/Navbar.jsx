@@ -31,8 +31,8 @@ export default function Navbar({ nav, setNav }) {
   }
 
   return (
-    <nav className="nav">
-      <div className="nav__content">
+    <nav className="nav ">
+      <div className="nav__content pt-[600px]">
         <p className="font-secondaryHeading mb-3 opacity-30 delay-300 text-tiny">
           MENU
         </p>

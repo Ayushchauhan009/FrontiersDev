@@ -12,14 +12,15 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 25,
+          max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-[#2A153F] cardHovered shadow-2xl hover:bg-transparent border border-transparent hover:border-[#7C22DE] transition-all p-5 rounded-2xl lg:w-auto sm:w-[360px] w-auto "
+        className="backdrop-blur-[10px] rounded-[8px] bg-[#ffffff01]  cardHovered shadow-2xl hover:bg-transparent  border-[#fff] hover:border-[#7C22DE] transition-all p-5  lg:w-auto sm:w-[360px] w-auto "
       >
-        <div className="mt-5 ">
-          <div className="absolute card-img--hover inset-0 flex  justify-end h-fit m-3 card-img_hover">
+        <Link href={source_code_link} target="_blank">
+          <div className="mt-2 ">
+            {/* <div className="absolute card-img--hover inset-0 flex  justify-end h-fit m-3 card-img_hover">
             <Link href={source_code_link} target="_blank">
               <div
                 // onClick={() => window.open(source_code_link, "_blank")}
@@ -32,28 +33,35 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
                 />
               </div>
             </Link>
+          </div> */}
+            <Image
+              src={image}
+              width={600}
+              height={600}
+              alt={name}
+              className="w-full mb-4 h-[200px] rounded-xl object-cover"
+            />
+            <div className="flex items-center justify-between">
+              <h3 className="text-white font-space font-semibold text-xl  lg:text-[24px]">
+                {name}
+              </h3>
+              <div class="arrow-container">
+                <div class="arrow"></div>
+                <div class="arrowline"></div>
+              </div>
+            </div>
           </div>
-          <Image
-            src={image}
-            width={600}
-            height={600}
-            alt={name}
-            className="w-full mb-4 h-[200px] rounded-2xl object-cover"
-          />
-          <h3 className="text-white font-space font-semibold text-xl  lg:text-[24px]">
-            {name}
-          </h3>
-        </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={tag.name}
-              className={`text-[14px] font-clash text-white ${tag.color} `}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p
+                key={tag.name}
+                className={`text-[14px] font-clash text-white ${tag.color} `}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </Link>
       </Tilt>
     </motion.div>
   );
@@ -68,10 +76,10 @@ const ProjectSection = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <div className="bgOpacity2">
-        <div className="max-container px-5 pb-20 lg:px-24">
+        <div className="max-container px-5 py-20 lg:px-24">
           <motion.div className="text-white" variants={textVariant()}>
             <p className="font-extrabold font-clash text-[52px]">
-              Our Projects
+              Projects Done
             </p>
             {/* <h2>Projects</h2> */}
           </motion.div>
@@ -89,12 +97,12 @@ const ProjectSection = () => {
               <br /> You can check more of our work that we have done by going
               through our individual Portfolio Websites mentioned below.
               <br />
-              <br />
-              *Hover or click on cards to check the link.
+              {/* <br />
+               *Hover or click on cards to check the link. */}
             </motion.p>
           </div>
           <div
-            className={`mt-20 grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10`}
+            className={`mt-20 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-5 gap-y-10`}
           >
             {projects.map((project, index) => (
               <div className="">
@@ -106,12 +114,12 @@ const ProjectSection = () => {
               </div>
             ))}
           </div>
-          <motion.p
+          {/* <motion.p
             variants={fadeIn("", "", 0.1, 1)}
             className="text-white font-clash text-[32px] mt-10 text-center"
           >
             More to come
-          </motion.p>
+          </motion.p> */}
         </div>
       </div>
     </motion.section>

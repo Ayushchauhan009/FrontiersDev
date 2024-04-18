@@ -41,7 +41,7 @@ const Services = () => {
         <div className="flex flex-col lg:flex-row items-start lg:space-x-20 justify-between lg:pt-20 ">
           <div className="font-bold w-full lg:w-[100%] sticky top-10 lg:top-20 font-exo">
             <p className="mt-10 mb-16 lg:mb-32 font-semibold  text-3xl lg:text-[55px] font-clash ">
-              Services
+              Services Offered
             </p>
             <div className="relative" style={{ height: "300px" }}>
               {images.map((image, index) => (

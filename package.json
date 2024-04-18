@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.15.14",
     "framer-motion": "^10.18.0",
     "maath": "^0.10.7",
+    "mongodb": "^6.4.0",
     "next": "14.0.4",
     "next-google-fonts": "^2.2.0",
     "react": "^18",

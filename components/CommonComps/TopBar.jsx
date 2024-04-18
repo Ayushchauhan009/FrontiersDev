@@ -1,9 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 
 export default function Topbar({ trigger, nav, setNav }) {
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHeight(window.scrollY || 0);
+    };
+
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
+
+  const backgroundColor = height > 100 ? "#0f002b" : "transparent";
+
   return (
-    <div className="bg-[#0f002b] bg-opacity-90 fixed z-50 top-0 w-full h-20  border-txt-primary-dark-bg/10 border-solid  mx-auto topbar-section">
+    <div
+      className={`bg-[${backgroundColor}] navigation transition-all duration-500 bg-opacity-90 fixed z-50 top-0 w-full h-20  border-txt-primary-dark-bg/10 border-solid  mx-auto topbar-section`}
+    >
       <div className="mx-auto flex justify-between md:px-6 items-center pt-0 h-full max-w-7xl px-4 lg:px-10">
         <div className="font-accentFont text-txt-primary-dark-bg font-black text-sm block lg:text-lg">
           <img src="/logoNav.png" alt="" className="w-16 h-auto" />

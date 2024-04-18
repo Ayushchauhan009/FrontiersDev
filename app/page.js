@@ -12,6 +12,8 @@ import Projects from "@/components/Projects";
 import HeightExtra from "@/components/HeightExtra";
 import Pricing from "@/components/Pricing";
 import { ProjectSection } from "@/components/ProjectSection";
+import Form from "@/components/Form";
+import StarsCanvas from "@/components/Stars";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -45,9 +47,14 @@ const Loading = () => {
           {/* <Navbar /> */}
           <Home trigger={trigger} nav={nav} setNav={setNav} />
           <Services />
-          <Intro />
-          <ProjectSection/>
-          <Pricing/>
+          {/* <Intro /> */}
+          <ProjectSection />
+          {/* <Pricing /> */}
+
+          <div className="relative z-0">
+            <Form />
+            <StarsCanvas />
+          </div>
         </div>
       )}
     </div>

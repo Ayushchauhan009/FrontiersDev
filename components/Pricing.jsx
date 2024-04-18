@@ -9,14 +9,17 @@ const Pricing = () => {
   return (
     <div className=" lg:px-20 px-5 py-10 bgOpacity2 h-auto">
       <div className="max-container">
-        <div className="w-full font-clash tracking-wider lg:h-[80px] border border-[#7c22de] lg:rounded-[30px] rounded-[10px] flex lg:flex-row flex-col h-auto justify-between items-center transAll">
+        <div className="w-full font-clash tracking-wider lg:h-[80px] relative border border-[#7c22de] lg:rounded-[30px] rounded-[10px] flex lg:flex-row flex-col h-auto justify-between items-center transAll">
+          <div className="bg-black bg-opacity-50 absolute w-40 h-[60px] top-2.5 rounded-[20px] left-[280px] "></div>
+          {/* Buttons  */}
+
           <p
             className={`cursor-pointer clickable text-xl text-white  font-exo  py-6 px-20 rounded-[30px] font-bold ${
               activeButton === "Basic" ? "clickable-bg" : ""
             }`}
             onClick={() => handleClick("Basic")}
           >
-          Enhanced
+            Enhanced
           </p>
           <p
             className={`cursor-pointer clickable text-xl text-white font-exo  py-6 px-20 rounded-[40px] font-bold ${
@@ -24,7 +27,7 @@ const Pricing = () => {
             }`}
             onClick={() => handleClick("Standard")}
           >
-          Exclusive
+            Exclusive
           </p>
           <p
             className={`cursor-pointer clickable text-xl font-exo text-white  py-6 px-20 rounded-[30px] font-bold ${
@@ -32,7 +35,7 @@ const Pricing = () => {
             }`}
             onClick={() => handleClick("Premium")}
           >
-          Infinity
+            Infinity
           </p>
         </div>
         <div
