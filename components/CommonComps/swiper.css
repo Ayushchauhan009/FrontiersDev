@@ -79,6 +79,6 @@ body {
     .swiper {
         width: 80%;
         height: 420px;
-        scale: 0.75;
+        transform: scale(0.75);
       }
 }
