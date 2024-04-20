@@ -14,6 +14,7 @@ import Pricing from "@/components/Pricing";
 import { ProjectSection } from "@/components/ProjectSection";
 import Form from "@/components/Form";
 import StarsCanvas from "@/components/Stars";
+import Testimonials from "@/components/CommonComps/Testimonials";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -55,6 +56,7 @@ const Loading = () => {
             <Form />
             <StarsCanvas />
           </div>
+          {/* <Testimonials /> */}
         </div>
       )}
     </div>
