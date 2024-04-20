@@ -7,8 +7,8 @@ import Testimonials from "./CommonComps/Testimonials";
 
 const Form = () => {
   return (
-    <div className=" px-5 lg:px-20 pb-20">
-      <div className="max-container flex lg:items-center  flex-col lg:flex-row justify-center space-y-40 lg:space-y-0 lg:space-x-[280px]">
+    <div className=" px-0 lg:px-20 pb-20">
+      <div className="max-container flex lg:items-center  flex-col lg:flex-row lg:justify-center space-y-20 lg:space-y-0 lg:space-x-[280px]">
         <div
           // variants={slideIn("left", "tween", 0.2, 1)}
           className="  p-6 rounded-2xl "

@@ -14,7 +14,7 @@ const Testimonials = () => {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="mySwiper "
       >
         <SwiperSlide className=" font-space text-center px-4">
           Working with FrontiersDev has transformed our travel business. Their

@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: #1a1a1a;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: #fff;
+  background: #1a1a1a;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -77,8 +77,8 @@ body {
 
 @media (max-width: 480px) {
     .swiper {
-        width: 100%;
+        width: 80%;
         height: 420px;
-        scale: 0.8;
+        scale: 0.75;
       }
 }
