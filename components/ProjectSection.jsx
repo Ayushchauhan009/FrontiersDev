@@ -47,7 +47,7 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
               </h3>
               <div class="arrow-container">
                 <div class="arrow"></div>
-                <div class="arrowline absolute h-0.5 border border-white bg-white top-[50%] left-[50%] translate-x-[-19%] translate-y-[300%] rotate-[30deg]"></div>
+                <div class="arrowline absolute h-[1px] border border-white bg-white top-[50%] left-[50%] translate-x-[-22%] translate-y-[200%] rotate-[30deg]"></div>
               </div>
             </div>
           </div>

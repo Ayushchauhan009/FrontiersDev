@@ -7,6 +7,11 @@ import Testimonials from "./CommonComps/Testimonials";
 import TestimonialsMobile from "./CommonComps/TestimonialsMobile";
 
 const Form = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <div className=" px-0 lg:px-20 pb-20">
       <div className="max-container flex lg:items-center  flex-col lg:flex-row lg:justify-center space-y-20 lg:space-y-0 lg:space-x-[280px]">
@@ -29,8 +34,9 @@ const Form = () => {
               <input
                 type="text"
                 name="name"
-                // value={form.name}
-                // onChange={handleChange}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
                 placeholder="Full Name"
                 className="bg-tertiary py-4 lg:w-[500px]  font-space text-[18px]  border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
               />
@@ -40,8 +46,9 @@ const Form = () => {
               <input
                 type="email"
                 name="email"
-                // value={form.email}
-                // onChange={handleChange}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
                 placeholder="Email Id"
                 className="bg-tertiary py-4 font-space text-[18px] border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
               />
@@ -51,8 +58,9 @@ const Form = () => {
               <textarea
                 rows="1"
                 name="message"
-                // value={form.message}
-                // onChange={handleChange}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
                 placeholder="Project Brief"
                 className="bg-tertiary py-4  border-b  font-space text-[18px] bg-transparent resize-none placeholder:text-white text-white outline-none font-medium"
               />
