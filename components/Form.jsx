@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
 import Testimonials from "./CommonComps/Testimonials";
+import TestimonialsMobile from "./CommonComps/TestimonialsMobile";
 
 const Form = () => {
   return (
@@ -62,7 +63,12 @@ const Form = () => {
           </form>
         </div>
 
-        <Testimonials />
+        <div className="px-14 lg:block hidden lg:px-0">
+          <Testimonials />
+        </div>
+        <div className="block lg:hidden">
+          <TestimonialsMobile />
+        </div>
       </div>
     </div>
   );

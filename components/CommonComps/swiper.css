@@ -78,7 +78,7 @@ body {
 @media (max-width: 480px) {
     .swiper {
         width: 80%;
-        height: 420px;
-        transform: scale(0.75);
+        height: 460px;
+        /* transform: scale(0.75); */
       }
 }

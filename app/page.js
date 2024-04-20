@@ -15,6 +15,7 @@ import { ProjectSection } from "@/components/ProjectSection";
 import Form from "@/components/Form";
 import StarsCanvas from "@/components/Stars";
 import Testimonials from "@/components/CommonComps/Testimonials";
+import TestimonialsMobile from "@/components/CommonComps/TestimonialsMobile";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -56,7 +57,6 @@ const Loading = () => {
             <Form />
             <StarsCanvas />
           </div>
-          {/* <Testimonials /> */}
         </div>
       )}
     </div>
