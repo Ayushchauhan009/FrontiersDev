@@ -7,7 +7,7 @@ import { EffectCube, Pagination } from "swiper/modules";
 
 const TestimonialsMobile = () => {
   return (
-    <div className="w-full h-[400px]">
+    <div className="w-full pb-20">
       <Swiper
         effect={"cube"}
         grabCursor={true}
