@@ -12,10 +12,12 @@ import Projects from "@/components/Projects";
 import HeightExtra from "@/components/HeightExtra";
 import Pricing from "@/components/Pricing";
 import { ProjectSection } from "@/components/ProjectSection";
-import Form from "@/components/Form";
+import Form from "@/app/utilies/Form";
 import StarsCanvas from "@/components/Stars";
 import Testimonials from "@/components/CommonComps/Testimonials";
 import TestimonialsMobile from "@/components/CommonComps/TestimonialsMobile";
+import Approach from "@/components/Approach";
+import OurApproach from "@/components/OurApproach";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -50,9 +52,9 @@ const Loading = () => {
           <Home trigger={trigger} nav={nav} setNav={setNav} />
           <Services />
           {/* <Intro /> */}
+          <OurApproach />
           <ProjectSection />
           {/* <Pricing /> */}
-
           <div className="relative z-0">
             <Form />
             <StarsCanvas />
