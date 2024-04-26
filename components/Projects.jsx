@@ -2,6 +2,7 @@
 import React from "react";
 import { projects } from "@/constants";
 import { Tilt } from "react-tilt";
+import AnimatedBackground from "./CommonComps/AnimatedBg";
 
 const ProjectCard = ({
   index,
@@ -33,7 +34,8 @@ const ProjectCard = ({
 
 const Projects = () => {
   return (
-    <>
+    <div className="relative">
+      <AnimatedBackground />
       <div>
         <p>My Projects</p>
         <h2>Projects</h2>
@@ -52,7 +54,7 @@ const Projects = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -26,7 +26,7 @@ export default function Topbar({ trigger, nav, setNav }) {
     <div
       className={`bg-[${backgroundColor}] navigation transition-all duration-500 bg-opacity-90 fixed z-50 top-0 w-full h-20  border-txt-primary-dark-bg/10 border-solid  mx-auto topbar-section`}
     >
-      <div className="mx-auto flex justify-between md:px-6 items-center pt-0 h-full max-w-7xl px-4 lg:px-10">
+      <div className="mx-auto flex justify-between md:px-6 items-center pt-0 h-full max-w-[1440px] px-4 lg:px-10">
         <div className="font-accentFont text-txt-primary-dark-bg font-black text-sm block lg:text-lg">
           <img src="/logoNav.png" alt="" className="w-16 h-auto" />
         </div>
@@ -37,7 +37,7 @@ export default function Topbar({ trigger, nav, setNav }) {
               nav ? "hidden" : "block"
             }`}
           >
-            <button className="mr-8 bg-[#7c22de] font-clash hover:bg-transparent px-5 py-3 shadow-2xl scale-90 hover:scale-100 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px]">
+            <button className="mr-8 bg-[#7c22de] font-platiPy hover:bg-transparent px-5 py-3 shadow-2xl scale-90 hover:scale-100 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px]">
               Say Hello
             </button>
           </div>

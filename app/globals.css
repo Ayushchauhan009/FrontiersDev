@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,8 +23,8 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #1a1a1a;
+  /* color: rgb(var(--foreground-rgb)); */
+  background: #000;
 }
 
 .max-container {
@@ -1260,4 +1261,208 @@ scrollbar-width: none;
   letter-spacing: var(--headlineMedium);
   font-size: var(--headlineMedium);
   text-transform: uppercase;
+}
+
+
+
+.img-box img {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='6' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 100px;
+  box-sizing: border-box;
+  object-fit: contain;
+  margin: 10px;
+}
+
+
+.programming-lang,.backend,.databases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+
+.img-box.programming-lang img, .img-box.backend img, .img-box.databases img {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+
+.Frontend,.ui_ux {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  place-content: center;
+  place-items: center;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+
+@media screen and (min-width: 640px) {
+
+  .Frontend,.ui_ux {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+ .backend {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      padding-top: 30px;
+  }
+  .databases {
+      grid-template-columns: 1fr 1fr;
+      padding-top: 30px;
+  }
+}
+
+.img-box.Frontend img,.img-box.ui_ux img {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+@media screen and (min-width: 400px) {
+
+  .img-box.programming-lang img, .img-box.backend img, .img-box.databases img, .img-box.Frontend img,.img-box.ui_ux img {
+      height: 100px;
+      width: 100px;
+      padding: 10px;
+      margin: 10px;
+
+  }
+  .img-box.Frontend img,.img-box.ui_ux img {
+      margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img-box.Frontend img,.img-box.ui_ux img {
+      height: 80px;
+      width: 80px;
+      padding: 10px;
+      margin: 20px;
+  }
+}
+
+
+.buttons button {
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.buttons button img {
+  opacity: 0.3;
+}
+
+
+.buttons button span {
+  opacity: 0.6;
+  color: #fff;
+}
+
+
+
+.buttons button {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  /* border-bottom: 1px solid  rgb(255, 255, 255,0.1); */
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .buttons button {
+      border: none !important;
+      padding: 10px !important;
+  }
+  .buttons button::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 90%;
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+.buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttons button:hover::after {
+  transition: none;
+  visibility: hidden;
+}
+
+
+
+.tabs-active {
+ 
+  
+  background: rgba(0, 0, 0, 0) linear-gradient(92.88deg, #5927E9 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%) repeat scroll 0% 0%;
+ border: medium none;
+  transition: all 0.5s ease 0s;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+
+
+}
+
+
+
+.buttons button.tabs-active::after {
+  transition: none;
+  visibility: hidden;
+}
+
+
+.buttons button.tabs-active img {
+  opacity: 1;
+}
+
+
+.buttons button.tabs-active span {
+  opacity: 1;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .main-heading {
+      margin-left: 10%;
+  }
+}
+
+
+.technologies-section {
+  max-height: 1000px;
+}
+
+@media screen and (max-height: 800px) {
+  .tech-cover {
+      height: 900px !important;
+  }  
+  .technology-box {
+      transform: translate(-50%,-50%) scale(0.8);
+  }
+}
+
+[data-aos='custom-ani'] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[data-aos='custom-ani'].aos-animate {
+  opacity: 0.2;
 }

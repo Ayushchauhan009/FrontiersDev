@@ -12,11 +12,11 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 25,
           scale: 1,
           speed: 450,
         }}
-        className="backdrop-blur-[10px] rounded-[8px] bg-[#ffffff01]  cardHovered shadow-2xl hover:bg-transparent  border-[#fff] hover:border-[#7C22DE] transition-all p-5  lg:w-auto sm:w-[360px] w-auto "
+        className="backdrop-blur-[10px] border border-[#7c22de]  rounded-[8px] bg-[#080202]  cardHovered shadow-2xl    transition-all p-5  lg:w-auto sm:w-[360px] w-auto "
       >
         <Link href={source_code_link} target="_blank">
           <div className="mt-2 ">
@@ -34,33 +34,29 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
               </div>
             </Link>
           </div> */}
-            <Image
-              src={image}
-              width={600}
-              height={600}
-              alt={name}
-              className="w-full mb-4 h-[200px] rounded-xl object-cover"
-            />
             <div className="flex items-center justify-between">
               <h3 className="text-white font-space font-semibold text-xl  lg:text-[24px]">
                 {name}
               </h3>
-              <div class="arrow-container">
-                <div class="arrow"></div>
-                <div class="arrowline absolute h-[1px] border border-white bg-white top-[50%] left-[50%] translate-x-[-22%] translate-y-[200%] rotate-[30deg]"></div>
-              </div>
             </div>
           </div>
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="my-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
               <p
                 key={tag.name}
-                className={`text-[14px] font-clash text-white ${tag.color} `}
+                className={`text-[14px] font-platiPy text-white ${tag.color} `}
               >
                 #{tag.name}
               </p>
             ))}
           </div>
+          <Image
+            src={image}
+            width={600}
+            height={600}
+            alt={name}
+            className="w-full mb-4 h-[200px] rounded-xl object-cover"
+          />
         </Link>
       </Tilt>
     </motion.div>
@@ -76,9 +72,9 @@ const ProjectSection = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <div className="bgOpacity2">
-        <div className="max-container px-5 py-20 lg:px-24">
+        <div className="max-container px-6  py-20 lg:-mt-80 lg:px-24">
           <motion.div className="text-white" variants={textVariant()}>
-            <p className="font-extrabold font-clash text-[52px]">
+            <p className="font-extrabold font-platiPy text-[36px] lg:text-[52px]">
               Projects Done
             </p>
             {/* <h2>Projects</h2> */}
@@ -102,7 +98,7 @@ const ProjectSection = () => {
             </motion.p>
           </div>
           <div
-            className={`mt-20 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-5 gap-y-10`}
+            className={`mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 gap-y-10`}
           >
             {projects.map((project, index) => (
               <div className="">

@@ -32,35 +32,33 @@ export default function Navbar({ nav, setNav }) {
 
   return (
     <nav className="nav ">
-      <div className="nav__content pt-[600px]">
-        <p className="font-secondaryHeading mb-3 opacity-30 delay-300 text-tiny">
-          MENU
-        </p>
+      <div className="nav__content font-platiPy pt-[600px]">
+        <p className=" mb-3 opacity-30 delay-300">MENU</p>
         <ul className="nav__list">
           <li
             onClick={handleNavButtons}
-            className={`nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-18 ${
+            className={`nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[70px] ${
               Home && "active-nav"
             }`}
           >
             <a
               id="home"
               href="/"
-              className="hover-target font-extrabold text-3xl 400:text-5xl md:text-6xl xl:text-7xl"
+              className="hover-target font-extrabold text-3xl lg:text-[80px]"
             >
               HOME
             </a>
           </li>
-          <li className="nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-18">
+          <li className="nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[75px]">
             <a
               href="http://"
               target="_blank"
-              className="hover-target font-exo text-3xl 400:text-5xl  md:text-6xl xl:text-7xl"
+              className="hover-target font-extrabold text-3xl lg:text-[80px]"
             >
               SERVICES
             </a>
           </li>
-          <li className="nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-18">
+          <li className="nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[70px]">
             <a
               href="http://"
               className="hover-target font-exo text-3xl 400:text-5xl  md:text-6xl xl:text-7xl"
@@ -70,7 +68,7 @@ export default function Navbar({ nav, setNav }) {
           </li>
           <li
             onClick={handleNavButtons}
-            className={`nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-18 ${
+            className={`nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[70px] ${
               Projects && "active-nav"
             }`}
           >
@@ -84,7 +82,7 @@ export default function Navbar({ nav, setNav }) {
           </li>
           <li
             onClick={handleNavButtons}
-            className={`nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-18 ${
+            className={`nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[70px] ${
               ContactMe && "active-nav"
             }`}
           >

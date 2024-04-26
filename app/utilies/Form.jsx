@@ -18,7 +18,6 @@ const Form = () => {
       });
 
       if (!response.ok) {
-        // console.log("falling over");
         throw new Error(`response status: ${response.status}`);
       }
       event.target.reset();
@@ -33,22 +32,13 @@ const Form = () => {
   return (
     <div className=" px-0 lg:px-20 pb-20">
       <div className="max-container flex lg:items-center  flex-col lg:flex-row lg:justify-center space-y-20 lg:space-y-0 lg:space-x-[280px]">
-        <div
-          // variants={slideIn("left", "tween", 0.2, 1)}
-          className="  p-6 rounded-2xl "
-        >
+        <div className="  p-6 rounded-2xl ">
           <p className="font-extrabold font-clash text-[28px] lg:text-[52px] text-white">
             Get in Touch
           </p>
-          {/* <h3 className="">Contact</h3> */}
 
-          <form
-            // ref={formRef}
-            onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
-          >
+          <form onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
             <label className="flex flex-col">
-              {/* <span className="text-white mb-4 font-medium">Your name</span> */}
               <input
                 type="text"
                 name="name"
@@ -57,7 +47,6 @@ const Form = () => {
               />
             </label>
             <label className="flex flex-col">
-              {/* <span className="text-white mb-4 font-medium">Your email</span> */}
               <input
                 type="email"
                 name="email"
@@ -66,7 +55,6 @@ const Form = () => {
               />
             </label>
             <label className="flex flex-col">
-              {/* <span className="text-white mb-4 font-medium">Your message</span> */}
               <textarea
                 rows="1"
                 name="message"
