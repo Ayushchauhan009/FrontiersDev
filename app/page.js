@@ -18,6 +18,7 @@ import Testimonials from "@/components/CommonComps/Testimonials";
 import TestimonialsMobile from "@/components/CommonComps/TestimonialsMobile";
 import Approach from "@/components/Approach";
 import OurApproach from "@/components/OurApproach";
+import ChooseUs from "@/components/ChooseUs";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -53,6 +54,7 @@ const Loading = () => {
           <Services />
           {/* <Intro /> */}
           <OurApproach />
+          <ChooseUs />
           <ProjectSection />
           {/* <Pricing /> */}
           <div className="relative z-0">
