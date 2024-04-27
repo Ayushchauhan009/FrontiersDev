@@ -81,7 +81,7 @@ const ProjectSection = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <div className="bgOpacity2">
-        <div className="max-container px-6  lg:py-20  lg:px-14">
+        <div className="max-container px-6 py-10 lg:py-20  lg:px-14">
           <motion.div className="text-white" variants={textVariant()}>
             <p className="font-extrabold font-platiPy text-[36px] lg:text-[52px]">
               Projects Done

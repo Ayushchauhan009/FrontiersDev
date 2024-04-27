@@ -19,6 +19,7 @@ import TestimonialsMobile from "@/components/CommonComps/TestimonialsMobile";
 import Approach from "@/components/Approach";
 import OurApproach from "@/components/OurApproach";
 import ChooseUs from "@/components/ChooseUs";
+import ChooseUsMob from "@/components/ChooseUsMob";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -54,7 +55,12 @@ const Loading = () => {
           <Services />
           {/* <Intro /> */}
           <OurApproach />
-          <ChooseUs />
+          <div className="hidden lg:block">
+            <ChooseUs />
+          </div>
+          <div className="lg:hidden block">
+            <ChooseUsMob />
+          </div>
           <ProjectSection />
           {/* <Pricing /> */}
           <div className="relative z-0">
