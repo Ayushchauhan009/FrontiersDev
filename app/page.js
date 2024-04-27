@@ -20,6 +20,7 @@ import Approach from "@/components/Approach";
 import OurApproach from "@/components/OurApproach";
 import ChooseUs from "@/components/ChooseUs";
 import ChooseUsMob from "@/components/ChooseUsMob";
+import Footer from "@/components/Footer";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -52,9 +53,13 @@ const Loading = () => {
         >
           {/* <Navbar /> */}
           <Home trigger={trigger} nav={nav} setNav={setNav} />
-          <Services />
+          <div id="our-services">
+            <Services />
+          </div>
           {/* <Intro /> */}
-          <OurApproach />
+          <div id="our-approach">
+            <OurApproach />
+          </div>
           <div className="hidden lg:block">
             <ChooseUs />
           </div>
@@ -69,6 +74,7 @@ const Loading = () => {
             <Form />
             <StarsCanvas />
           </div>
+          <Footer />
         </div>
       )}
     </div>

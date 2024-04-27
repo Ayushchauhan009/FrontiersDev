@@ -4,7 +4,7 @@ import React from "react";
 const ChooseUsMob = () => {
   return (
     <div className="bg-black relative z-0">
-      <div className="max-container px-6 lg:px-14 py-10 lg:py-20 relative z-0">
+      <div className="max-container px-6 lg:px-14  lg:py-20 relative z-0">
         <p className="pb-20 font-extrabold font-platiPy text-[36px] lg:text-[52px] text-white">
           Why Choose Us?
         </p>

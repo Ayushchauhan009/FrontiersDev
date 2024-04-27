@@ -28,8 +28,9 @@ export default function Topbar({ trigger, nav, setNav }) {
       className={`bg-[${backgroundColor}] navigation transition-all duration-500 bg-opacity-90 fixed z-50 top-0 w-full h-20  border-txt-primary-dark-bg/10 border-solid  mx-auto topbar-section`}
     >
       <div className="mx-auto flex justify-between md:px-6 items-center pt-0 h-full max-w-[1440px] px-4 lg:px-10">
-        <div className="font-accentFont text-txt-primary-dark-bg font-black text-sm block lg:text-lg">
-          <img src="/logoNav.png" alt="" className="w-16 h-auto" />
+        <div className="font-platiPy text-white text-txt-primary-dark-bg font-black text-sm lg:text-[22px] flex items-center tracking-widest">
+          <img src="/logoNav.png" alt="" className="w-16 h-auto mr-0" />
+          FrontiersDev
         </div>
 
         <div className="flex items-center">
