@@ -12,7 +12,7 @@ export default function Technologies() {
     switch (toogle) {
       case 1:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Keyword Research:</strong> Conduct thorough keyword
@@ -50,7 +50,7 @@ export default function Technologies() {
         );
       case 2:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>User-Centric Design:</strong> Focus on creating an
@@ -82,7 +82,7 @@ export default function Technologies() {
         );
       case 3:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Keyword Research:</strong> Conduct thorough keyword
@@ -120,7 +120,7 @@ export default function Technologies() {
         );
       case 4:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Image Optimization:</strong> Optimize graphics for web
@@ -160,7 +160,7 @@ export default function Technologies() {
         );
       case 5:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Keyword-Optimized Titles:</strong> Craft descriptive and
@@ -210,7 +210,7 @@ export default function Technologies() {
           <div className="opacity-20 hidden lg:block absolute -inset-6 md:-inset-8 bg-gradient-to-r from-[#3500d3] via-red-500  to-yellow-400 rounded-lg animate-tilt"></div>
           <div className=" transition relative    bg-[#000000af] rounded-xl border  border-[#7C22DE] px-3 py-2 md:px-4 lg:px-6">
             <div className="w-full flex flex-col lg:flex-row lg:h-full py-4">
-              <div className="buttons flex overflow-x-scroll h-full w-full py-6 px-4 items-center border-b space-y-0 lg:space-y-6 lg:flex-col lg:overflow-x-hidden  lg:w-80 lg:border-r lg:border-r-[#7C22DE] lg:border-b-0 lg:justify-between lg:py-0 lg:px-0 lg:pr-3">
+              <div className="buttons flex overflow-x-scroll h-full w-full pb-6 lg:pb-0  items-center border-b space-y-0 lg:space-y-6 lg:flex-col lg:overflow-x-hidden  lg:w-80 lg:border-r lg:border-r-[#7C22DE] lg:border-b-0 lg:justify-between lg:py-0 lg:px-0 lg:pr-3">
                 <button
                   onClick={() => {
                     handleTabs(1);
@@ -224,7 +224,7 @@ export default function Technologies() {
                     src={Programming}
                     alt="programming language logo"
                   /> */}
-                  <span className="leading-[26px]  lg:whitespace-nowrap text-lg lg:text-xl ">
+                  <span className="leading-[26px]  whitespace-nowrap text-lg lg:text-xl ">
                     Website Development
                   </span>
                 </button>
@@ -288,7 +288,7 @@ export default function Technologies() {
                   </span>
                 </button>
               </div>
-              <div className=" relative overflow-y-auto h-[26rem] sm:h-80 lg:h-full">
+              <div className=" w-full relative overflow-y-auto h-[26rem] sm:h-80 lg:h-full">
                 {showContent(toogle)}
               </div>
             </div>
