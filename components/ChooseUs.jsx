@@ -38,7 +38,7 @@ const ChooseUs = () => {
 
   return (
     <div className="bg-black relative z-0">
-      <div className="max-container px-6 lg:px-14 py-20 relative z-0">
+      <div className="max-container px-6 lg:px-14  relative z-0">
         <p className="pb-20 font-extrabold font-platiPy text-[36px] lg:text-[52px] text-white">
           Why Choose Us?
         </p>

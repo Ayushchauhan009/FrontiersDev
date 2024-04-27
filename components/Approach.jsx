@@ -204,7 +204,7 @@ export default function Technologies() {
   };
 
   return (
-    <div className=" font-platiPy  ">
+    <div className=" font-platiPy pb-20 ">
       <div className=" relative">
         <div className="h-[600px] lg:h-auto">
           <div className="opacity-20 hidden lg:block absolute -inset-6 md:-inset-8 bg-gradient-to-r from-[#3500d3] via-red-500  to-yellow-400 rounded-lg animate-tilt"></div>

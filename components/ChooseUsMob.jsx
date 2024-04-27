@@ -29,7 +29,7 @@ const ChooseUsMob = () => {
             <div className="text-center flex flex-col items-center justify-center p-14 lg:p-20 border-l border-white border-b draggable">
               <Image
                 src="/solutions.png"
-                alt="team"
+                alt="custom solutions"
                 width={80}
                 height={20}
                 className="w-[60px]"
@@ -45,7 +45,7 @@ const ChooseUsMob = () => {
             <div className="text-center flex flex-col items-center justify-center p-14 lg:p-20 border-r border-white border-t draggable">
               <Image
                 src="/techno.png"
-                alt="technology"
+                alt="latest technologies"
                 width={80}
                 height={20}
                 className="w-[60px]"

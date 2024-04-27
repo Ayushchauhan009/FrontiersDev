@@ -61,9 +61,11 @@ const Loading = () => {
           <div className="lg:hidden block">
             <ChooseUsMob />
           </div>
-          <ProjectSection />
+          <div id="our-projects">
+            <ProjectSection />
+          </div>
           {/* <Pricing /> */}
-          <div className="relative z-0">
+          <div id="contact-us" className="relative z-0">
             <Form />
             <StarsCanvas />
           </div>

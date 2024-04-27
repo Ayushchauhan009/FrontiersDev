@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --backgroundColor: #000;
   --primaryColor: #0aa1ff;

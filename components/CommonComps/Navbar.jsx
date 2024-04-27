@@ -1,10 +1,11 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Navbar({ nav, setNav }) {
   const [Home, setHome] = useState(true);
-  const [ContactMe, setContactMe] = useState(false);
-  const [Projects, setProjects] = useState(false);
+  const [ContactMe, setContactMe] = useState("#contact-us");
+  const [Projects, setProjects] = useState("#our-projects");
 
   function handleNavButtons(e) {
     setNav(!nav);
@@ -41,30 +42,30 @@ export default function Navbar({ nav, setNav }) {
               Home && "active-nav"
             }`}
           >
-            <a
+            <Link
               id="home"
               href="/"
               className="hover-target font-extrabold text-3xl lg:text-[80px]"
             >
               HOME
-            </a>
+            </Link>
           </li>
           <li className="nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[75px]">
-            <a
+            <Link
               href="http://"
               target="_blank"
               className="hover-target font-extrabold text-3xl lg:text-[80px]"
             >
               SERVICES
-            </a>
+            </Link>
           </li>
           <li className="nav__list-item leading-8 400:leading-12 md:leading-16 xl:leading-[70px]">
-            <a
+            <Link
               href="http://"
               className="hover-target font-exo text-3xl 400:text-5xl  md:text-6xl xl:text-7xl"
             >
               Our Approach
-            </a>
+            </Link>
           </li>
           <li
             onClick={handleNavButtons}
@@ -72,13 +73,13 @@ export default function Navbar({ nav, setNav }) {
               Projects && "active-nav"
             }`}
           >
-            <a
+            <Link
               id="projects"
-              href="#seeMyWork"
+              href="#our-projects"
               className="hover-target font-exo text-3xl 400:text-5xl  md:text-6xl xl:text-7xl"
             >
               PROJECTS
-            </a>
+            </Link>
           </li>
           <li
             onClick={handleNavButtons}
@@ -86,13 +87,13 @@ export default function Navbar({ nav, setNav }) {
               ContactMe && "active-nav"
             }`}
           >
-            <a
+            <Link
               id="contact"
-              href="#contactMe"
+              href="#contact-us"
               className="hover-target font-exo text-3xl 400:text-5xl  md:text-6xl xl:text-7xl"
             >
               CONTACT US
-            </a>
+            </Link>
           </li>
         </ul>
         <p className="font-secondaryHeading delay-350 text-tiny mt-6 opacity-30 lg:text-base">
