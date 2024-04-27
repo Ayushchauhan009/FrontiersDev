@@ -8,10 +8,12 @@ import TestimonialsMobile from "../../components/CommonComps/TestimonialsMobile"
 import axios from "axios";
 
 const Form = () => {
+  const [isSending, setIsSending] = useState(false);
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
     try {
+      setIsSending(true);
       const response = await fetch("/api/contact", {
         method: "post",
         body: formData,
@@ -26,6 +28,8 @@ const Form = () => {
     } catch (err) {
       console.error(err);
       alert("Error, please try resubmitting the form");
+    } finally {
+      setIsSending(false);
     }
   }
 
@@ -43,6 +47,7 @@ const Form = () => {
                 type="text"
                 name="name"
                 placeholder="Full Name"
+                required
                 className="bg-tertiary py-4 lg:w-[500px]  font-space text-[18px]  border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
               />
             </label>
@@ -51,6 +56,7 @@ const Form = () => {
                 type="email"
                 name="email"
                 placeholder="Email Id"
+                required
                 className="bg-tertiary py-4 font-space text-[18px] border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
               />
             </label>
@@ -58,15 +64,19 @@ const Form = () => {
               <textarea
                 rows="1"
                 name="message"
+                required
                 placeholder="Project Brief"
                 className="bg-tertiary py-4  border-b  font-space text-[18px] bg-transparent resize-none placeholder:text-white text-white outline-none font-medium"
               />
             </label>
             <button
               type="submit"
-              className="mr-8 w-fit bg-[#7c22de] font-clash hover:bg-transparent px-8 py-3 shadow-2xl scale-100 hover:scale-105 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px]"
+              disabled={isSending}
+              className={`mr-8  w-fit bg-[#7c22de] font-clash hover:bg-transparent px-8 py-3 shadow-2xl scale-100 hover:scale-105 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px] ${
+                isSending ? "sending" : ""
+              }`}
             >
-              Send
+              {isSending ? "Sending..." : "Send"}
             </button>
           </form>
         </div>
