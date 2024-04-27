@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import TopBar from "./CommonComps/TopBar";
+import Image from "next/image";
 
 const Header = ({ trigger, nav, setNav }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });

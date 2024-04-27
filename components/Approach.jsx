@@ -77,15 +77,6 @@ export default function Technologies() {
                 desired actions, contributing to higher conversion rates and
                 improved SEO performance.
               </li>
-              <br />
-
-              <li>
-                <strong>Accessible Design:</strong> Ensure your design is
-                accessible to all users, including those with disabilities, by
-                incorporating features such as alt text for images and proper
-                semantic HTML markup, which can positively impact search engine
-                rankings.
-              </li>
             </ul>
           </div>
         );
@@ -157,13 +148,13 @@ export default function Technologies() {
                 to strengthen brand recognition, which can positively impact
                 search engine rankings.
               </li>
-              <br />
+              {/* <br />
               <li>
                 <strong>Responsive Design:</strong> Ensure that graphics are
                 designed to be responsive and display correctly on various
                 devices and screen sizes, providing a seamless experience for
                 users and improving SEO performance.
-              </li>
+              </li> */}
             </ul>
           </div>
         );
@@ -215,25 +206,25 @@ export default function Technologies() {
   return (
     <div className=" font-platiPy  ">
       <div className="skills-cover relative">
-        <div className="h-[600px]">
+        <div className="h-[600px] lg:h-auto">
           <div className="opacity-20 hidden lg:block absolute -inset-6 md:-inset-8 bg-gradient-to-r from-[#3500d3] via-red-500  to-yellow-400 rounded-lg animate-tilt"></div>
           <div className=" transition relative w-full h-full skills bg-[#000000af] rounded-xl border  border-[#7C22DE] px-3 py-2 md:px-4 lg:px-6">
             <div className="w-full flex flex-col lg:flex-row lg:h-full py-4">
-              <div className="buttons flex overflow-x-scroll h-full w-full py-6 px-4 items-center border-b space-y-0 lg:space-y-6 lg:flex-col lg:overflow-x-hidden  lg:w-80 lg:border-r lg:border-r-[#7C22DE] lg:border-b-0 lg:justify-between lg:py-0 lg:px-0 lg:pr-6">
+              <div className="buttons flex overflow-x-scroll h-full w-full py-6 px-4 items-center border-b space-y-0 lg:space-y-6 lg:flex-col lg:overflow-x-hidden  lg:w-80 lg:border-r lg:border-r-[#7C22DE] lg:border-b-0 lg:justify-between lg:py-0 lg:px-0 lg:pr-3">
                 <button
                   onClick={() => {
                     handleTabs(1);
                   }}
                   className={`${
                     toogle === 1 && "tabs-active"
-                  } h-20  mr-4 p-4 lg:text-xl  flex flex-col items-center justify-center rounded-lg lg:mr-0 lg:w-full`}
+                  } h-20  mr-4 p-5 lg:text-xl  flex flex-col items-center justify-center rounded-lg lg:mr-0 lg:w-full`}
                 >
                   {/* <img
                     className="w-7 -mt-2"
                     src={Programming}
                     alt="programming language logo"
                   /> */}
-                  <span className="leading-[26px] text-lg lg:text-xl ">
+                  <span className="leading-[26px]  whitespace-nowrap text-lg lg:text-xl ">
                     Website Development
                   </span>
                 </button>
