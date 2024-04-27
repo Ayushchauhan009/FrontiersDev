@@ -38,6 +38,15 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
               <h3 className="text-white font-platiPy font-semibold text-xl  lg:text-[24px]">
                 {name}
               </h3>
+              <div>
+                <Image
+                  src="/arrow-right.png"
+                  alt="link"
+                  width={40}
+                  height={40}
+                  className="link-image"
+                />
+              </div>
             </div>
           </div>
           <div className="my-4 flex flex-wrap gap-2">
