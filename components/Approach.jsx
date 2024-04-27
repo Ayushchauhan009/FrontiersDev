@@ -224,7 +224,7 @@ export default function Technologies() {
                     src={Programming}
                     alt="programming language logo"
                   /> */}
-                  <span className="leading-[26px]  whitespace-nowrap text-lg lg:text-xl ">
+                  <span className="leading-[26px]  lg:whitespace-nowrap text-lg lg:text-xl ">
                     Website Development
                   </span>
                 </button>
@@ -288,7 +288,7 @@ export default function Technologies() {
                   </span>
                 </button>
               </div>
-              <div className=" w-full relative overflow-y-auto h-[26rem] sm:h-80 lg:h-full">
+              <div className=" relative overflow-y-auto h-[26rem] sm:h-80 lg:h-full">
                 {showContent(toogle)}
               </div>
             </div>
