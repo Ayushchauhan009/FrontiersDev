@@ -43,7 +43,7 @@ const Footer = () => {
   };
   return (
     <div className="bgOpacity2">
-      <div className="px-6 lg:px-10 py-20  text-white max-container">
+      <div className="px-0 lg:px-10 py-20  text-white max-container">
         <div className="pb-10 flex flex-col lg:flex-row lg:justify-between">
           <div className="font-platiPy text-txt-primary-dark-bg font-black text-sm lg:text-[22px] flex items-center tracking-widest">
             <img src="/logoNav.png" alt="" className="w-20 h-auto mr-0" />
@@ -59,9 +59,9 @@ const Footer = () => {
                 value={email}
                 onChange={handleEmailChange}
                 placeholder="Your Email Id"
-                className="py-4 ml-4 lg:ml-0  px-5 lg:w-[400px] font-space rounded-r-none lg:rounded-r-[8px] rounded-[8px] bg-transparent outline-none border-2 border-[#7C22DE]"
+                className="py-4 ml-4 lg:ml-0 w-[93%] px-5 lg:w-[400px] font-space rounded-[8px] bg-transparent outline-none border-2 border-[#7C22DE]"
               />
-              <button className="mr-8 bg-[#7c22de] font-platiPy rounded-l-none lg:rounded-l-[8px] hover:bg-[#7d22de15] px-10 py-3 shadow-2xl scale-100  border border-transparent   transition-all text-[20px] font-medium text-white rounded-[8px] absolute lg:-right-[30px] ">
+              <button className=" float-right lg:ml-0 mt-4 lg:mt-0 mr-4 lg:mr-8 bg-[#7c22de] font-platiPy hover:bg-[#7d22de15] px-8 lg:px-10 py-2.5 lg:py-3 shadow-2xl scale-100  border border-transparent   transition-all text-[20px] font-medium text-white rounded-[8px] lg:absolute lg:-right-[30px] ">
                 {isSending ? "Sending..." : "Send"}
               </button>
             </form>

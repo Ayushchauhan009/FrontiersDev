@@ -87,7 +87,7 @@ const Form = () => {
             <button
               type="submit"
               disabled={isSending}
-              className={`mr-8  w-fit bg-[#7c22de] font-clash hover:bg-transparent px-8 py-3 shadow-2xl scale-100 hover:scale-105 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px] ${
+              className={`mr-8  w-fit bg-[#7c22de] font-platiPy hover:bg-transparent px-8 py-3 shadow-2xl scale-100 hover:scale-105 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px] ${
                 isSending ? "sending" : ""
               }`}
             >
