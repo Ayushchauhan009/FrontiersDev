@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <div className="relative bgOpacity2 pb-20 text-white">
       <div
-        className={` px-5 lg:px-24    max-container ${
+        className={` px-5 lg:px-14    max-container ${
           isSticky ? "lg:sticky inset-0 top-20" : ""
         }`}
       >

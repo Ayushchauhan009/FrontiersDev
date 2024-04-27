@@ -63,7 +63,7 @@ export default function Navbar({ nav, setNav }) {
               href="http://"
               className="hover-target font-exo text-3xl 400:text-5xl  md:text-6xl xl:text-7xl"
             >
-              PORTFOLIO
+              Our Approach
             </a>
           </li>
           <li

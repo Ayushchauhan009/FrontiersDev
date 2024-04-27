@@ -35,7 +35,7 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
             </Link>
           </div> */}
             <div className="flex items-center justify-between">
-              <h3 className="text-white font-space font-semibold text-xl  lg:text-[24px]">
+              <h3 className="text-white font-platiPy font-semibold text-xl  lg:text-[24px]">
                 {name}
               </h3>
             </div>
@@ -44,7 +44,7 @@ const FirstComponent = ({ index, name, image, tags, source_code_link }) => {
             {tags.map((tag) => (
               <p
                 key={tag.name}
-                className={`text-[14px] font-platiPy text-white ${tag.color} `}
+                className={`text-[14px] font-space text-white ${tag.color} `}
               >
                 #{tag.name}
               </p>
@@ -72,7 +72,7 @@ const ProjectSection = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <div className="bgOpacity2">
-        <div className="max-container px-6  py-20 lg:-mt-80 lg:px-24">
+        <div className="max-container px-6  lg:py-20  lg:px-14">
           <motion.div className="text-white" variants={textVariant()}>
             <p className="font-extrabold font-platiPy text-[36px] lg:text-[52px]">
               Projects Done

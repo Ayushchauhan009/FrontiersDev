@@ -1,38 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-// import CPP from "../../Assets/icons/c++.svg";
-// import C from "../../Assets/icons/c.svg";
-// import PYTHON from "../../Assets/icons/python.svg";
-// import JAVASCRIPT from "../../Assets/icons/javascript.svg";
-// import HTML from "../../Assets/icons/html5.svg";
-// import CSS from "../../Assets/icons/css3.svg";
-// import Reactjs from "../../Assets/icons/reactjs.svg";
-// import SASS from "../../Assets/icons/sass.svg";
-// import JQuery from "../../Assets/icons/jquery.svg";
-// import Tailwind from "../../Assets/icons/tailwindcss.svg";
-// import Nextjs from "../../Assets/icons/next-js.svg";
-// import Node from "../../Assets/icons/node.svg";
-// import Express from "../../Assets/icons/express.svg";
-// import Firebase from "../../Assets/icons/firebase.svg";
-// import MySql from "../../Assets/icons/mysql.svg";
-// import Mongo from "../../Assets/icons/mongo.svg";
-// import Figma from "../../Assets/icons/figma.svg";
-// import Git from "../../Assets/icons/git.svg";
-// import Github from "../../Assets/icons/github.svg";
-// import Linux from "../../Assets/icons/linux.png";
-// import Ubuntu from "../../Assets/icons/ubuntu.svg";
-// import vsCode from "../../Assets/icons/vsCode.svg";
-// import Programming from "../../Assets/icons/programming.svg";
-// import Frontend from "../../Assets/icons/webdesign.svg";
-// import Backend from "../../Assets/icons/server.svg";
-// import Databases from "../../Assets/icons/db.svg";
-// import UI_UX from "../../Assets/icons/ui-ux.svg";
-// import Vim from "../../Assets/icons/vim.svg";
-// import "./Technologies.css";
-// import "aos/dist/aos.css";
+import React, { useState } from "react";
 
 export default function Technologies() {
   const [toogle, setToogle] = useState(1);
-  const [path, setPath] = useState("Website Development");
+  // const [path, setPath] = useState("tabs-active");
 
   const handleTabs = (number) => {
     setToogle(number);
@@ -43,31 +13,197 @@ export default function Technologies() {
       case 1:
         return (
           <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
-            <p>Hello world</p>
+            <ul>
+              <li>
+                <strong>Keyword Research:</strong> Conduct thorough keyword
+                research to target relevant terms and phrases used by your
+                audience.
+              </li>
+
+              <br />
+
+              <li>
+                <strong>Responsive Design:</strong> Ensure your website is
+                mobile-friendly and optimized for various devices to improve
+                user experience and search rankings.
+              </li>
+              <br />
+              <li>
+                <strong>Optimized Content:</strong> Create high-quality,
+                keyword-rich content that provides value to users and aligns
+                with search intent.
+              </li>
+              <br />
+              <li>
+                <strong>Meta Tags Optimization:</strong> Craft unique meta
+                titles and descriptions incorporating targeted keywords to
+                enhance click-through rates and search visibility.
+              </li>
+              <br />
+              <li>
+                <strong>Regular Updates:</strong> Keep your website updated with
+                fresh content, regular maintenance, and improvements to
+                demonstrate relevance and authority to search engines.
+              </li>
+            </ul>
           </div>
         );
       case 2:
         return (
-          <div className="img-box flex w-full flex-wrap justify-around mt-6 Frontend content">
-            <p></p>
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+            <ul>
+              <li>
+                <strong>User-Centric Design:</strong> Focus on creating an
+                intuitive and user-friendly interface that enhances the overall
+                browsing experience.
+              </li>
+              <br />
+              <li>
+                <strong>Fast Loading Speed:</strong> Optimize design elements
+                and assets to ensure quick page loading times, which positively
+                impacts user satisfaction and search engine rankings.
+              </li>
+              <br />
+              <li>
+                <strong>Mobile Optimization:</strong> Design with a mobile-first
+                approach, ensuring seamless usability and functionality across
+                various devices to cater to a wide audience and improve search
+                visibility.
+              </li>
+              <br />
+              <li>
+                <strong>Clear Call-to-Actions:</strong> Implement clear and
+                prominent calls-to-action (CTAs) that guide users towards
+                desired actions, contributing to higher conversion rates and
+                improved SEO performance.
+              </li>
+              <br />
+
+              <li>
+                <strong>Accessible Design:</strong> Ensure your design is
+                accessible to all users, including those with disabilities, by
+                incorporating features such as alt text for images and proper
+                semantic HTML markup, which can positively impact search engine
+                rankings.
+              </li>
+            </ul>
           </div>
         );
       case 3:
         return (
-          <div className="img-box flex w-full flex-wrap justify-around mt-6 backend content">
-            <p></p>
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+            <ul>
+              <li>
+                <strong>Keyword Research:</strong> Conduct thorough keyword
+                research to identify relevant terms and phrases that your target
+                audience is searching for.
+              </li>
+              <br />
+              <li>
+                <strong>Compelling Headlines:</strong> Craft attention-grabbing
+                headlines that incorporate targeted keywords and accurately
+                reflect the content of your articles or pages.
+              </li>
+              <br />
+              <li>
+                <strong>High-Quality Content:</strong> Create informative,
+                engaging, and well-researched content that addresses the needs
+                and interests of your audience while naturally incorporating
+                targeted keywords.
+              </li>
+              <br />
+              <li>
+                <strong>Optimized Meta Tags:</strong> Write unique meta titles
+                and descriptions for each page or article, including relevant
+                keywords to improve click-through rates and search engine
+                visibility.
+              </li>
+              <br />
+              <li>
+                <strong>Internal Linking:</strong> Strategically interlink your
+                content to other relevant pages within your website to improve
+                navigation, distribute link equity, and enhance SEO performance.
+              </li>
+            </ul>
           </div>
         );
       case 4:
         return (
-          <div className="img-box flex w-full flex-wrap justify-around mt-6 databases content">
-            <p></p>
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+            <ul>
+              <li>
+                <strong>Image Optimization:</strong> Optimize graphics for web
+                use by compressing file sizes, improving page loading speed and
+                overall user experience, which positively impacts SEO.
+              </li>
+              <br />
+              <li>
+                <strong>Alt Text:</strong> Include descriptive alt text for all
+                images and graphics to improve accessibility for visually
+                impaired users and provide search engines with additional
+                context about your content.
+              </li>
+              <br />
+              <li>
+                <strong>Visual Hierarchy:</strong> Use visual hierarchy
+                principles to guide users' attention towards important elements
+                and messages within your graphics, enhancing usability and
+                engagement.
+              </li>
+              <br />
+              <li>
+                <strong>Brand Consistency:</strong> Maintain consistency in
+                design elements, color schemes, and branding across all graphics
+                to strengthen brand recognition, which can positively impact
+                search engine rankings.
+              </li>
+              <br />
+              <li>
+                <strong>Responsive Design:</strong> Ensure that graphics are
+                designed to be responsive and display correctly on various
+                devices and screen sizes, providing a seamless experience for
+                users and improving SEO performance.
+              </li>
+            </ul>
           </div>
         );
       case 5:
         return (
-          <div className="img-box flex w-full flex-wrap justify-around mt-6 ui_ux content">
-            <p></p>
+          <div className="img-box flex w-full text-white font-space text-[20px] py-4 px-8 h-full ">
+            <ul>
+              <li>
+                <strong>Keyword-Optimized Titles:</strong> Craft descriptive and
+                keyword-rich titles for your videos to improve search engine
+                visibility and attract relevant viewers.
+              </li>
+              <br />
+              <li>
+                <strong>Engaging Thumbnails:</strong> Create compelling
+                thumbnails that accurately represent the content of your videos
+                and entice users to click, increasing click-through rates and
+                SEO performance.
+              </li>
+              <br />
+              <li>
+                <strong>Quality Content:</strong> Produce high-quality videos
+                with valuable and engaging content that resonates with your
+                target audience and encourages longer watch times, signaling to
+                search engines the relevance and quality of your content.
+              </li>
+              <br />
+              <li>
+                <strong>Optimized Descriptions:</strong> Write detailed
+                descriptions with relevant keywords.
+              </li>
+              <br />
+              <li>
+                <strong>Call-to-Action:</strong> Include clear and relevant
+                calls-to-action within your videos to encourage viewer
+                engagement, such as subscribing, liking, or visiting your
+                website, which can indirectly impact SEO metrics like user
+                engagement and retention.
+              </li>
+            </ul>
           </div>
         );
 
@@ -77,17 +213,16 @@ export default function Technologies() {
   };
 
   return (
-    <div className="tech-cover font-platiPy relative w-full lg:h-[800px] flex lg:items-center justify-center  technologies-section lg:mt-12">
-      <div className="skills-cover w-10/12 h-[100%]  -mt-14  lg:mt-0  relative ">
-        <div className="technology-box min-h-[20rem] w-full lg:translate-x-[50px] lg:-translate-y-[100px] max-w-128 lg:max-w-[62rem] lg:h-[32rem]">
-          <div className="opacity-20 absolute -inset-6 md:-inset-8 bg-gradient-to-r from-[#3500d3] via-red-500  to-yellow-400 rounded-lg animate-tilt"></div>
-          <div className="transform translate-y-20 transition relative w-full h-full skills bg-[#000000af] rounded-xl border  border-[#7C22DE] px-3 py-2 md:px-4 lg:px-6">
+    <div className=" font-platiPy  ">
+      <div className="skills-cover relative">
+        <div className="h-[600px]">
+          <div className="opacity-20 hidden lg:block absolute -inset-6 md:-inset-8 bg-gradient-to-r from-[#3500d3] via-red-500  to-yellow-400 rounded-lg animate-tilt"></div>
+          <div className=" transition relative w-full h-full skills bg-[#000000af] rounded-xl border  border-[#7C22DE] px-3 py-2 md:px-4 lg:px-6">
             <div className="w-full flex flex-col lg:flex-row lg:h-full py-4">
               <div className="buttons flex overflow-x-scroll h-full w-full py-6 px-4 items-center border-b space-y-0 lg:space-y-6 lg:flex-col lg:overflow-x-hidden  lg:w-80 lg:border-r lg:border-r-[#7C22DE] lg:border-b-0 lg:justify-between lg:py-0 lg:px-0 lg:pr-6">
                 <button
                   onClick={() => {
                     handleTabs(1);
-                    setPath("Website Development");
                   }}
                   className={`${
                     toogle === 1 && "tabs-active"
@@ -105,7 +240,6 @@ export default function Technologies() {
                 <button
                   onClick={() => {
                     handleTabs(2);
-                    setPath("UI/UX Designing");
                   }}
                   className={`${
                     toogle === 2 && "tabs-active"
@@ -123,7 +257,6 @@ export default function Technologies() {
                 <button
                   onClick={() => {
                     handleTabs(3);
-                    setPath("Content Writing");
                   }}
                   className={`${
                     toogle === 3 && "tabs-active"
@@ -141,7 +274,6 @@ export default function Technologies() {
                 <button
                   onClick={() => {
                     handleTabs(4);
-                    setPath("Graphic Designing");
                   }}
                   className={`${
                     toogle === 4 && "tabs-active"
@@ -155,24 +287,18 @@ export default function Technologies() {
                 <button
                   onClick={() => {
                     handleTabs(5);
-                    setPath("Video Editing");
                   }}
                   className={`${
                     toogle === 5 && "tabs-active"
                   } h-20  mr-4 p-4 lg:text-xl  flex flex-col items-center justify-center rounded-lg lg:mr-0 lg:w-full`}
                 >
-                  {/* <img
-                    className="w-6 "
-                    src={UI_UX}
-                    alt="other technologies logos"
-                  /> */}
                   <span className=" leading-[26px] text-lg lg:text-xl">
                     Video Editing
                   </span>
                 </button>
               </div>
-              <div className="h-64 w-full relative overflow-y-auto sm:h-80 lg:h-full">
-                {showContent()}
+              <div className=" w-full relative overflow-y-auto h-[26rem] sm:h-80 lg:h-full">
+                {showContent(toogle)}
               </div>
             </div>
           </div>

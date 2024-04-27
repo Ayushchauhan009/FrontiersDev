@@ -1438,31 +1438,6 @@ scrollbar-width: none;
 
 
 
-@media screen and (min-width: 1024px) {
-  .main-heading {
-      margin-left: 10%;
-  }
-}
 
 
-.technologies-section {
-  max-height: 1000px;
-}
 
-@media screen and (max-height: 800px) {
-  .tech-cover {
-      height: 900px !important;
-  }  
-  .technology-box {
-      transform: translate(-50%,-50%) scale(0.8);
-  }
-}
-
-[data-aos='custom-ani'] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[data-aos='custom-ani'].aos-animate {
-  opacity: 0.2;
-}

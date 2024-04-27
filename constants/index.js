@@ -2,7 +2,7 @@ import { AiPictures, AyushPfolio, browser, rahulPfolio } from "@/public";
 
 const projects = [
   {
-    name: "Ayush {Portfolio}",
+    name: "PortFolio - Ayush Chauhan",
     description: "",
     tags: [
       {
@@ -22,7 +22,7 @@ const projects = [
     source_code_link: "https://aayushchauhan.netlify.app/",
   },
   {
-    name: "Rahul {Portfolio} ",
+    name: "Portfolio - Rahul Kumar ",
     description: "",
     tags: [
       {
@@ -42,7 +42,7 @@ const projects = [
     source_code_link: "https://rony-cyber.netlify.app/",
   },
   {
-    name: "{AI Pictures}",
+    name: "AI Pictures",
     description: "",
     tags: [
       {
@@ -62,7 +62,7 @@ const projects = [
     source_code_link: "https://aipictures.netlify.app/",
   },
   {
-    name: "{Web Browser}",
+    name: "Web Browser",
     description: "",
     tags: [
       {
