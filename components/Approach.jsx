@@ -205,10 +205,10 @@ export default function Technologies() {
 
   return (
     <div className=" font-platiPy  ">
-      <div className="skills-cover relative">
+      <div className=" relative">
         <div className="h-[600px] lg:h-auto">
           <div className="opacity-20 hidden lg:block absolute -inset-6 md:-inset-8 bg-gradient-to-r from-[#3500d3] via-red-500  to-yellow-400 rounded-lg animate-tilt"></div>
-          <div className=" transition relative w-full h-full skills bg-[#000000af] rounded-xl border  border-[#7C22DE] px-3 py-2 md:px-4 lg:px-6">
+          <div className=" transition relative    bg-[#000000af] rounded-xl border  border-[#7C22DE] px-3 py-2 md:px-4 lg:px-6">
             <div className="w-full flex flex-col lg:flex-row lg:h-full py-4">
               <div className="buttons flex overflow-x-scroll h-full w-full py-6 px-4 items-center border-b space-y-0 lg:space-y-6 lg:flex-col lg:overflow-x-hidden  lg:w-80 lg:border-r lg:border-r-[#7C22DE] lg:border-b-0 lg:justify-between lg:py-0 lg:px-0 lg:pr-3">
                 <button
