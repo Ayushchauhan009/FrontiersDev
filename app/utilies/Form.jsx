@@ -37,7 +37,7 @@ const Form = () => {
     <div className=" px-0 lg:px-20 py-20">
       <div className="max-container flex lg:items-center  flex-col lg:flex-row lg:justify-center space-y-20 lg:space-y-0 lg:space-x-[280px]">
         <div className="  p-6 rounded-2xl ">
-          <p className="font-extrabold font-clash text-[28px] lg:text-[52px] text-white">
+          <p className="font-bold font-platiPy text-[36px] lg:text-[52px] text-white">
             Get in Touch
           </p>
 
@@ -48,7 +48,7 @@ const Form = () => {
                 name="name"
                 placeholder="Full Name"
                 required
-                className="bg-tertiary py-4 lg:w-[500px]  font-space text-[18px]  border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
+                className=" py-4 lg:w-[500px] nameInput font-space text-[18px]  border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
               />
             </label>
             <label className="flex flex-col">
@@ -57,7 +57,7 @@ const Form = () => {
                 name="email"
                 placeholder="Email Id"
                 required
-                className="bg-tertiary py-4 font-space text-[18px] border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
+                className=" py-4 font-space text-[18px] border-b bg-transparent placeholder:text-white text-white outline-none font-medium"
               />
             </label>
             <label className="flex flex-col">
