@@ -30,7 +30,7 @@ const Form = () => {
   }
 
   return (
-    <div className=" px-0 lg:px-20 pb-20">
+    <div className=" px-0 lg:px-20 py-20">
       <div className="max-container flex lg:items-center  flex-col lg:flex-row lg:justify-center space-y-20 lg:space-y-0 lg:space-x-[280px]">
         <div className="  p-6 rounded-2xl ">
           <p className="font-extrabold font-clash text-[28px] lg:text-[52px] text-white">
