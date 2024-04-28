@@ -43,10 +43,10 @@ const Footer = () => {
   };
   return (
     <div className="bgOpacity2">
-      <div className="px-0 lg:px-10 py-20  text-white max-container">
+      <div className="px-4 lg:px-10 py-20  text-white max-container">
         <div className="pb-10 flex flex-col lg:flex-row lg:justify-between">
           <div className="font-platiPy text-txt-primary-dark-bg font-black text-sm lg:text-[22px] flex items-center tracking-widest">
-            <img src="/logoNav.png" alt="" className="w-20 h-auto mr-0" />
+            <img src="/logoNav.png" alt="" className="w-16 h-auto mr-0" />
             FrontiersDev
           </div>
           <div className="mt-4 lg:mt-0 relative">
@@ -59,9 +59,9 @@ const Footer = () => {
                 value={email}
                 onChange={handleEmailChange}
                 placeholder="Your Email Id"
-                className="py-4 ml-4 lg:ml-0 w-[93%] px-5 lg:w-[400px] font-space rounded-[8px] bg-transparent outline-none border-2 border-[#7C22DE]"
+                className="py-4  w-full px-5 lg:w-[400px] font-space rounded-[8px] bg-transparent outline-none border-2 border-[#7C22DE]"
               />
-              <button className=" float-right lg:ml-0 mt-4 lg:mt-0 mr-4 lg:mr-8 bg-[#7c22de] font-platiPy hover:bg-[#7d22de15] px-8 lg:px-10 py-2.5 lg:py-3 shadow-2xl scale-100  border border-transparent   transition-all text-[20px] font-medium text-white rounded-[8px] lg:absolute lg:-right-[30px] ">
+              <button className=" float-right lg:ml-0 mt-4 lg:mt-0 mr-1 lg:mr-8 bg-[#7c22de] font-platiPy hover:bg-[#7d22de15] px-8 lg:px-10 py-2.5 lg:py-3 shadow-2xl scale-100  border border-transparent   transition-all text-[20px] font-medium text-white rounded-[8px] lg:absolute lg:-right-[30px] ">
                 {isSending ? "Sending..." : "Send"}
               </button>
             </form>
@@ -79,7 +79,7 @@ const Footer = () => {
             )}
           </div>
         </div>
-        <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row  justify-between px-4">
+        <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row  justify-between ">
           <div className="">
             <p className="border-b-2 border-[#7C22DE] inline-block font-platiPy pr-3 py-2  font-bold text-[20px] uppercase tracking-wide">
               About Us
@@ -98,23 +98,14 @@ const Footer = () => {
           </div>
           <div className="">
             <p className="border-b-2 border-[#7C22DE] inline-block pr-3 py-2 font-platiPy font-bold text-[20px] uppercase tracking-wide">
-              Social Presence
+              Our Services
             </p>
-            <ul className="font-space flex items-center space-x-4 text-lg mt-5">
-              <Link
-                href="https://www.youtube.com/channel/UCDPBOylX8arfbXRppChfu-g"
-                target="_blank"
-              >
-                <Image
-                  src="/youtube.png"
-                  alt="youtube"
-                  width={50}
-                  height={60}
-                />
-              </Link>
-              <Link href="https://www.instagram.com/ayush.jsx/" target="_blank">
-                <Image src="/Ig.png" alt="instagram" width={50} height={60} />
-              </Link>
+            <ul className="font-space space-y-4 text-lg mt-5">
+              <li>Website Development</li>
+              <li>UI/UX Designing</li>
+              <li>Content Writing</li>
+              <li>Graphic Designing</li>
+              <li>Video Editing</li>
             </ul>
           </div>
 
@@ -129,9 +120,25 @@ const Footer = () => {
               together!
             </p>
             <br />
-            <p className="font-space text-center lg:text-left text-[16px] font-normal mt-5 lg:mt-10">
-              © {fDate} FrontiersDev
-            </p>
+            <div className="flex space-x-5 mt-4 items-center">
+              <p className="font-space text-center lg:text-left text-[16px] font-normal ">
+                © {fDate} FrontiersDev
+              </p>
+              <Link
+                href="https://www.youtube.com/channel/UCDPBOylX8arfbXRppChfu-g"
+                target="_blank"
+              >
+                <Image
+                  src="/youtube.png"
+                  alt="youtube"
+                  width={40}
+                  height={60}
+                />
+              </Link>
+              <Link href="https://www.instagram.com/ayush.jsx/" target="_blank">
+                <Image src="/Ig.png" alt="instagram" width={40} height={60} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
