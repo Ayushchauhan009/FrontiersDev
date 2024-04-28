@@ -107,7 +107,7 @@ const ProjectSection = () => {
             </motion.p>
           </div>
           <div
-            className={`mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 gap-y-10`}
+            className={`mt-20 grid grid-cols-1 sm:grid-cols-2 lg:gap-x-10 gap-y-10`}
           >
             {projects.map((project, index) => (
               <div className="">
