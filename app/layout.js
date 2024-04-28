@@ -23,7 +23,10 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Elevate your online presence with expert website development services from FrontiersDev. Our team crafts stunning, user-centric websites that drive results. From intuitive design to seamless functionality, we deliver tailored solutions that reflect your brand identity. Contact us today to unlock your online potential."
         />
-        <meta property="og:image" content="/OgImage.png" />
+        <meta
+          property="og:image"
+          content="https://frontiersdev-test.netlify.app/OgImage.png"
+        />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
 
@@ -36,7 +39,10 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="Elevate your online presence with expert website development services from FrontiersDev. Our team crafts stunning, user-centric websites that drive results. From intuitive design to seamless functionality, we deliver tailored solutions that reflect your brand identity. Contact us today to unlock your online potential."
         />
-        <meta name="twitter:image" content="/OgImage.png" />
+        <meta
+          name="twitter:image"
+          content="https://frontiersdev-test.netlify.app/OgImage.png"
+        />
         <meta property="twitter:image:width" content="1200" />
         <meta property="twitter:image:height" content="630" />
       </Head>
