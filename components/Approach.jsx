@@ -12,7 +12,7 @@ export default function Technologies() {
     switch (toogle) {
       case 1:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
+          <div className=" flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Keyword Research:</strong> Conduct thorough keyword
@@ -50,7 +50,7 @@ export default function Technologies() {
         );
       case 2:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
+          <div className=" flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>User-Centric Design:</strong> Focus on creating an
@@ -82,7 +82,7 @@ export default function Technologies() {
         );
       case 3:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
+          <div className=" flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Keyword Research:</strong> Conduct thorough keyword
@@ -120,7 +120,7 @@ export default function Technologies() {
         );
       case 4:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
+          <div className=" flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Image Optimization:</strong> Optimize graphics for web
@@ -160,7 +160,7 @@ export default function Technologies() {
         );
       case 5:
         return (
-          <div className="img-box flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
+          <div className=" flex w-full text-white font-space text-[20px] py-4 lg:px-8 h-full ">
             <ul>
               <li>
                 <strong>Keyword-Optimized Titles:</strong> Craft descriptive and

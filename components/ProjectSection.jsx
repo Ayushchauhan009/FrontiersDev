@@ -84,7 +84,7 @@ const ProjectSection = () => {
         <div className="max-container px-6 py-10 lg:py-32  lg:px-14">
           <motion.div className="text-white" variants={textVariant()}>
             <p className="font-extrabold font-platiPy text-[36px] lg:text-[52px]">
-              Projects Done
+              Our Projects
             </p>
             {/* <h2>Projects</h2> */}
           </motion.div>
