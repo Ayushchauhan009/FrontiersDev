@@ -50,7 +50,10 @@ const Footer = () => {
             FrontiersDev
           </div>
           <div className="mt-4 lg:mt-0 relative">
-            <form onSubmit={handleSubmit}>
+            <form
+              className="flex space-x-1 lg:block lg:space-x-0"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="email"
                 name="email"
@@ -59,9 +62,9 @@ const Footer = () => {
                 value={email}
                 onChange={handleEmailChange}
                 placeholder="Your Email Id"
-                className="py-4  w-full px-5 lg:w-[400px] font-space rounded-[8px] bg-transparent outline-none border-2 border-[#7C22DE]"
+                className="py-3 lg:py-4 w-fit  px-5 lg:w-[400px] font-space rounded-[8px] bg-transparent outline-none border-2 border-[#7C22DE]"
               />
-              <button className=" float-right lg:ml-0 mt-4 lg:mt-0 mr-1 lg:mr-8 bg-[#7c22de] font-platiPy hover:bg-[#7d22de15] px-8 lg:px-10 py-2.5 lg:py-3 shadow-2xl scale-100  border border-transparent   transition-all text-[20px] font-medium text-white rounded-[8px] lg:absolute lg:-right-[30px] ">
+              <button className=" lg:ml-0  lg:mt-0.5 mr-1 lg:mr-8 bg-[#7c22de] font-platiPy hover:bg-[#7d22de15] px-4 lg:px-10 py-2.5 lg:py-3 shadow-2xl scale-100  border border-transparent   transition-all text-lg Lg:text-[20px] font-medium text-white rounded-[8px] lg:absolute lg:-right-[0px] ">
                 {isSending ? "Sending..." : "Send"}
               </button>
             </form>
