@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@next/third-parties": "^14.2.5",
     "@react-three/drei": "^9.93.0",
     "@react-three/fiber": "^8.15.14",
     "aos": "^2.3.4",
