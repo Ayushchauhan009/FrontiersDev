@@ -14,16 +14,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVWQNBY8Y4"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVWQNBY8Y4"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
 
           gtag('config', 'G-LVWQNBY8Y4');
-        </script>
+        </script> */}
 
         <meta
           property="og:title"
