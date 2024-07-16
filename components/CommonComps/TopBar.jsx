@@ -29,15 +29,14 @@ export default function Topbar({ trigger, nav, setNav }) {
     >
       <div className="mx-auto flex justify-between md:px-6 items-center pt-0 h-full max-w-[1440px] px-4 lg:px-10">
         <div className="font-platiPy text-txt-primary-dark-bg font-black text-sm lg:text-[22px] flex items-center tracking-widest">
-          <img src="/logoNav.png" alt="" className="w-16 h-auto mr-0" />
+          <img src="/logo.png" alt="" className="w-16 h-auto mr-0" />
           <span className="text-white hidden lg:block"> FrontiersDev</span>
         </div>
 
         <div className="flex items-center">
           <div
-            className={`button transition-all duration-1000 ${
-              nav ? "hidden" : "block"
-            }`}
+            className={`button transition-all duration-1000 ${nav ? "hidden" : "block"
+              }`}
           >
             <button className="mr-8 bg-[#7c22de] font-platiPy hover:bg-transparent px-5 py-3 shadow-2xl scale-90 hover:scale-100 border border-transparent  hover:border-[#7C22DE] transition-all text-[20px] font-medium text-white rounded-[10px]">
               <Link href="#contact-us">Say Hello</Link>

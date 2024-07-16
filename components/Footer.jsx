@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="px-4 lg:px-10 py-20  text-white max-container">
         <div className="pb-10 flex flex-col lg:flex-row lg:justify-between">
           <div className="font-platiPy text-txt-primary-dark-bg font-black text-sm lg:text-[22px] flex items-center tracking-widest">
-            <img src="/logoNav.png" alt="" className="w-16 h-auto mr-0" />
+            <img src="/logo.png" alt="" className="w-16 h-auto mr-0" />
             FrontiersDev
           </div>
           <div className="mt-4 lg:mt-0 relative">

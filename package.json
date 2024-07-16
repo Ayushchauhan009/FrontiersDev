@@ -25,6 +25,7 @@
     "mongodb": "^6.4.0",
     "next": "14.0.4",
     "next-google-fonts": "^2.2.0",
+    "next-seo": "^6.5.0",
     "next-sitemap": "^4.2.3",
     "node-cron": "^3.0.3",
     "nodemailer": "^6.9.13",

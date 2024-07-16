@@ -44,7 +44,7 @@ const Loading = () => {
 
   return (
     <div>
-      <Head>
+      {/* <Head>
       <title>Frontiers Dev</title>
       <meta name="description" content="Elevate your online presence with expert website development services from FrontiersDev." />
       <meta property="og:title" content="Frontiers Dev" />
@@ -56,7 +56,7 @@ const Loading = () => {
       <meta name="twitter:title" content="Frontiers Dev" />
       <meta name="twitter:description" content="Elevate your online presence with expert website development services from FrontiersDev." />
       <meta name="twitter:image" content="https://frontiers.dev/Bg2.png" />
-    </Head>
+    </Head> */}
       {loading ? (
         <Loader />
       ) : (
