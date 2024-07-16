@@ -21,6 +21,7 @@ import OurApproach from "@/components/OurApproach";
 import ChooseUs from "@/components/ChooseUs";
 import ChooseUsMob from "@/components/ChooseUsMob";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 // import Navbar from "@/components/CommonComps/Navbar";
 
@@ -43,6 +44,19 @@ const Loading = () => {
 
   return (
     <div>
+      <Head>
+      <title>Frontiers Dev</title>
+      <meta name="description" content="Elevate your online presence with expert website development services from FrontiersDev." />
+      <meta property="og:title" content="Frontiers Dev" />
+      <meta property="og:description" content="Elevate your online presence with expert website development services from FrontiersDev." />
+      <meta property="og:image" content="https://frontiers.dev/Bg2.png" />
+      <meta property="og:url" content="https://frontiers.dev/" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Frontiers Dev" />
+      <meta name="twitter:description" content="Elevate your online presence with expert website development services from FrontiersDev." />
+      <meta name="twitter:image" content="https://frontiers.dev/Bg2.png" />
+    </Head>
       {loading ? (
         <Loader />
       ) : (
