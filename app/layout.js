@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/CommonComps/Navbar";
 import "./globals.css";
 import Head from "next/head";
-// import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <meta property="twitter:image:height" content="630" />
       </Head>
       <body className={inter.className}>{children}</body>
-      {/* <GoogleTagManager gtmId="G-LVWQNBY8Y4" /> */}
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
     </html>
   );
 }
