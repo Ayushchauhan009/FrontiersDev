@@ -13,11 +13,11 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+
+
 
 # production
-/build
+
 
 # misc
 .DS_Store
@@ -29,7 +29,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+.env
 
 # vercel
 .vercel

@@ -21,7 +21,7 @@ export async function POST(request) {
   });
 
   try {
-    await transporter.sendMail({
+    transporter.sendMail({
       from: name,
       to: "ai.aayush10@gmail.com",
       replyTo: email,

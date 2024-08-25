@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://frontiers.dev
+
+# Sitemaps
+Sitemap: https://frontiers.dev/sitemap.xml
