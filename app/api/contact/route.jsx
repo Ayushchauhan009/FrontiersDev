@@ -5,7 +5,7 @@ export async function POST(request) {
   const username = process.env.NODEMAILER_MAIL;
   const password = process.env.NODEMAILER_PASS;
 
-  const formData = await request.formData();
+  const formData = request.formData();
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
