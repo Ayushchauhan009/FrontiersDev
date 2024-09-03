@@ -102,11 +102,11 @@ const Form = () => {
           </form>
           {submitted && (
             <div className="fixed z-50 inset-0 flex justify-center items-center bg-black bg-opacity-50">
-              <div className="bg-black bg-opacity-40 p-6 rounded shadow-lg">
-                <p className="text-center text-white text-[36px] lg:text-[70px] font-semibold font-platiPy mt-4">
+              <div className="bg-white p-6 rounded shadow-lg">
+                <p className="text-center text-black text-[36px] lg:text-[70px] font-semibold font-platiPy mt-4">
                   Thank you, {submittedName}
                 </p>
-                <p className="text-white font-space text-center mt-4 text-[20px] lg:text-[28px]">
+                <p className="text-black font-space text-center mt-4 text-[20px] lg:text-[28px]">
                   We will be in touch with you shortly.
                 </p>
               </div>
