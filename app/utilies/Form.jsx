@@ -33,11 +33,6 @@ const Form = () => {
         }
       );
 
-      // Axios automatically throws for status codes >= 400, no need for .ok check
-      if (response.status !== 200) {
-        throw new Error(`Response status: ${response.status}`);
-      }
-
       // Handle the successful response
       event.target.reset();
       setName('');
