@@ -23,7 +23,7 @@ const Form = () => {
       const requestBody = formDataObject;
 
       // Send POST request to your API Gateway endpoint
-      const response = await axios.post(
+      const response = axios.post(
         'https://frontiersdev-backend.onrender.com/send-email',
         { requestBody },
         {
